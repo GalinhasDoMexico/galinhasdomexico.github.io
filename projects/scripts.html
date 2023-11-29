@@ -13,6 +13,7 @@
 
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css?family=Roboto|Pacifico">
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="../css/scripts-style.css">
 
@@ -78,31 +79,28 @@
  <embed type="text/html" src="../txt/dscrpcscript.txt"  width="500" height="300">
 </center>
 
-<div class="conteinerbutton">
- <div class="centerbutton">
-<button class="button" onclick="copiarTexto()">Copiar Script</button>
- </div>
-</div>
+  <div class="conteinerbutton">
+    <div class="centerbutton">
+      <button class="button" onclick="copiarTexto()">Copiar Script</button>
+    </div>
+  </div>
+
 <script>
 function copiarTexto() {
-  var textoElement = document.getElementById('textoDoArquivo');
   var xhr = new XMLHttpRequest();
   xhr.open('GET', '../txt/dscrpcscript.txt', true);
   xhr.onload = function() {
     if (xhr.status === 200) {
       var texto = xhr.responseText;
-      textoElement.textContent = texto;
-      var textarea = document.createElement('textarea');
-      textarea.value = texto;
-      document.body.appendChild(textarea);
-      textarea.select();
+      var input = document.createElement('input');
+      input.value = texto;
+      document.body.appendChild(input);
+      input.select();
       document.execCommand('copy');
-      document.body.removeChild(textarea);
+      document.body.removeChild(input);
       alert('Texto copiado para a área de transferência!');
     }
   };
-
-  // Envia a solicitação
   xhr.send();
 }
 </script>
@@ -115,7 +113,6 @@ function copiarTexto() {
  <br>
  <br>
  <br>
-<h3>
-
+</h3>
 </body>
 </html>
