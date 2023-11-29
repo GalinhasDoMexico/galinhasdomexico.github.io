@@ -1,0 +1,121 @@
+<html lang="pt-br">
+<title>Scripts | Projetos / COFM Brasil</title>
+<link rel="icon" href="../img/favicon/avatar.png" type="image/x-icon">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="title" content="Scripts | Projetos / COFM Brasil">
+  <meta name="description" content="Veja scripts feitos por mim (ou não)"
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content=".../img/metabgindex.png">
+  <meta name="author" content="ChickenOfMexico'>
+
+<!-- Fonte e CSS -->
+
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Roboto|Pacifico">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="../css/scripts-style.css">
+
+<nav>
+ <br>
+  <i><a style="font-family: Pacifico" class="nav-settings" href="./">Página Principal</a></i>
+  <i><a style="font-family: Pacifico" class="nav-settings" href=".../projects">Projetos</a></i>
+  <i><a style="font-family: Pacifico" class="nav-settings" href=".../about-me">Sobre Mim</a></i>
+ <br>
+</nav>
+
+<body>
+
+<h1 class="title">Scripts | Projetos</h1>
+
+<p class="text">Olá, aqui você verá scripts que foram (ou não) criados por mim.</p>
+<p class="text" style="margin: 1">Lembrando que, os scripts podem estar quebrados, ter grandes chances de explodirem seu computador, feitos com as coxas e etc...</p>
+<nav>
+ <br>
+  <i><a style="font-family: Pacifico" class="nav-active" href=".../projects/scripts">Scripts</a></i>
+ <br>
+</nav>
+<br>
+<br>
+<hr style="width:50%">
+<br>
+<br>
+<h3 class="text">Script "Discord Rich Presence: CPU, RAM e Processos em Segundo Plano (Python)" (Feito usando o ChatGPT)</h3>
+<img class="center" src="../img/projects/scripts/rpccpuram.png" alt="Script "Discord Rich Presence: CPU, RAM e Processos em Segundo Plano (Python)"" width="320" height="144">
+<p class="text">Sim, fiz usando o ChatGPT, mas funciona... Eu acho, bem este abaixo esta os requisitos para rodar este belo script</p>
+<br>
+<p class="text"><b>Requisitos</b></p>
+<div class="list">
+  <ul class="myUL">
+    <li><a class="text" style="text-decoration: none" href="https://python.org/">Python</a></li>
+    <li>Plugin "pypresence" (pip install pypresence)</li>
+    <li>Plugin "pygetwindow" (pip install pygetwindow)</li>
+    <li>Plugin "psutil" (pip install psutil)</li>
+  </ul>
+</div>
+<br>
+<br>
+<br>
+<p class="text"><b>Imagens (Padrão)</b></p>
+<p class="text">Imagens que vem por padrão no Discord Rich Presence</p>
+<div class="row">
+  <div class="column">
+    <img src="https://i.ytimg.com/vi/Qb884krIWxA/maxresdefault.jpg" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="https://media.tenor.com/nFyjFsyn5j8AAAAd/scout-tf2-tf2.gif" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="https://s2-techtudo.glbimg.com/_V0iOO96UtwQBEwT4-jd_n8Urso=/0x0:695x395/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2018/s/p/bpAoUXQVGlgd3UssBLAA/tela-azul-da-morte-windows-10.jpg" style="width:100%">
+  </div>
+</div>
+<p class="text" style="text-align: left; display: inline-block; flex-direction: row; padding: 0 120 0">Aparece quando estiver entre <br> 0% a 50% (CPU ou RAM)</p> <p class="text" style="text-align: center; display: inline-block; flex-direction: row; padding: 0 100 0">Aparece quando estiver entre <br> 50% a 80% (CPU ou RAM)</p> <p class="text" style="text-align: right; display: inline-block; flex-direction: row; padding: 0 110 0">Aparece quando estiver entre <br> 86% a 100% (CPU ou RAM)</p>
+<br>
+<br>
+<br>
+<p class="text"><b>Script</b></p>
+<center>
+ <embed type="text/html" src="../txt/dscrpcscript.txt"  width="500" height="300">
+</center>
+
+<div class="conteinerbutton">
+ <div class="centerbutton">
+<button class="button" onclick="copiarTexto()">Copiar Script</button>
+ </div>
+</div>
+<script>
+function copiarTexto() {
+  var textoElement = document.getElementById('textoDoArquivo');
+  var xhr = new XMLHttpRequest();
+  xhr.open('GET', '../txt/dscrpcscript.txt', true);
+  xhr.onload = function() {
+    if (xhr.status === 200) {
+      var texto = xhr.responseText;
+      textoElement.textContent = texto;
+      var textarea = document.createElement('textarea');
+      textarea.value = texto;
+      document.body.appendChild(textarea);
+      textarea.select();
+      document.execCommand('copy');
+      document.body.removeChild(textarea);
+      alert('Texto copiado para a área de transferência!');
+    }
+  };
+
+  // Envia a solicitação
+  xhr.send();
+}
+</script>
+<h3 class="footer">
+ <br>
+ <br>
+  <i><a style="font-family: Pacifico" class="nav-settings" href="./">Página Principal</a></i>
+  <i><a style="font-family: Pacifico" class="nav-settings" href=".../projects">Projetos</a></i>
+  <i><a style="font-family: Pacifico" class="nav-settings" href=".../about-me">Sobre Mim</a></i>
+ <br>
+ <br>
+ <br>
+<h3>
+
+</body>
+</html>

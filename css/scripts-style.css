@@ -16,6 +16,17 @@ nav {
   text-align: center;
 }
 
+div.list {
+  text-align: center;
+}
+
+ul.myUL {
+  display: inline-block;
+  text-align: left;
+  color: white;
+  font-family: Roboto;
+}
+
 .nav-active {
   color: #8a56f7;
   text-decoration: none;
@@ -32,26 +43,21 @@ nav {
   margin-right:10px;
 }
 
-.title {
-  color: white;
-  text-align: center;
-  margin: 30;
-  font-family: Roboto
-}
-
 .text {
   color: white;
   text-align: center;
   font-family: Roboto
 }
 
-img {
-  border-radius: 160px;
-} 
+.title {
+  color: white;
+  text-align: center;
+  margin-top: 100;
+  font-family: Roboto
+}
 
 .center {
   display: block;
-  margin-top: 80;
   margin-left: auto;
   margin-right: auto;
   width: auto;
@@ -59,9 +65,46 @@ img {
 }
 
 h3.footer {
+  margin-top: 50;
   color: white;
   text-align: center;
   font-family: Roboto;
   font-weight: normal;
-  margin-top: 50;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
+
+.button {
+  background-color: #1D0B37;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+  padding: 5px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 10px; 
+  font-family: Pacifico;
+}
+
+.centerbutton {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.conteinerbutton {
+  position: relative;
 }
