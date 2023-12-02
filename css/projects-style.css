@@ -2,13 +2,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-body {
+body{
+  background-color: #000000;
+  margin: 0 0 0;
+}
+
+.otherbodyimg {
   background-image: url('../img/backgroundsite_dark.png');
   background-repeat: no-repeat;
   background-attachment: fixed; 
-  background-size: 100% 100%;
+  background-size: cover;
+  border: none;
 }
 
+.minebodyimg {
+  background-image: url('../img/projects/minecraftbg.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: cover;
+}
 nav {
   list-style-type: none;
   margin: 1;
