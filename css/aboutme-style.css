@@ -6,7 +6,7 @@ body {
   background-image: url('../img/backgroundsite_dark.png');
   background-repeat: no-repeat;
   background-attachment: fixed; 
-  background-size: 100% 100%;
+  background-size: 100%;
   margin: 0 0 0
 }
 
@@ -43,8 +43,11 @@ nav {
 
 .text {
   color: white;
-  text-align: center;
-  font-family: Roboto
+  font-family: Roboto;
+  text-align: justify;
+  max-width: 900px;
+  padding: 25px;
+  margin: auto;
 }
 
 .title {
