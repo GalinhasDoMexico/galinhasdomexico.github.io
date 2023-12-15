@@ -7,30 +7,33 @@
   src: url(../fonts/unisans.otf);
 }
 
-body {
-  background-image: url('../img/backgroundsite_dark.png');
+body{
+  background-color: #ffffff;
+  margin: 0 0 0;
+}
+
+.otherbodyimg {
+  background-image: url('../img/backgroundsite_light.png');
   background-repeat: no-repeat;
   background-attachment: fixed; 
   background-size: cover;
-  margin: 0 0 0
+  border: none;
 }
 
+.minebodyimg {
+  background-image: url('../img/projects/minecraftbg_light.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: cover;
+}
 nav {
-  background-image: url('../img/navbg.png'); 
+  list-style-type: none;
+  margin: 1;
+  padding: 0;
+  text-align: center;
+  background-image: url('../img/navbg_light.png'); 
   background-size: 100% 100%; 
   background-repeat: no-repeat; 
-  text-align: center;
-}
-
-div.list {
-  text-align: center;
-}
-
-ul.myUL {
-  display: inline-block;
-  text-align: left;
-  color: white;
-  font-family: Roboto;
 }
 
 .nav-active {
@@ -42,7 +45,7 @@ ul.myUL {
 }
 
 .nav-settings {
-  color: white;
+  color: rgb(0, 0, 0);
   text-decoration: none;
   font-style: normal;
   margin-left:10px;
@@ -50,13 +53,13 @@ ul.myUL {
 }
 
 .text {
-  color: white;
+  color: rgb(0, 0, 0);
   text-align: center;
   font-family: Roboto
 }
 
 .title {
-  color: white;
+  color: rgb(0, 0, 0);
   text-align: center;
   margin-top: 100;
   font-family: Roboto
@@ -69,10 +72,11 @@ ul.myUL {
   width: 100%;
   max-width: 400px;
   height: auto;
+  box-shadow: 0px 0px 8px #ffffff;
 }
 
 .rooter-social-bg {
-  background-color: #191919; 
+  background-color: #BBBBBB; 
   background-size: 100% 100%;
   margin: 0;
   text-align: center;
@@ -80,7 +84,7 @@ ul.myUL {
 
 .rooter-social {
   font-family: unisans;
-  color: white;
+  color: #000000;
   text-decoration: none; 
   font-style: normal;
   margin-left:10px;
@@ -88,70 +92,13 @@ ul.myUL {
 }
 
 footer {
-  color: white;
+  color: black;
   text-align: center;
   font-family: Roboto;
   font-weight: normal;
   margin-top: 50;
-  background-image: url('../img/navbgrooter.png'); 
+  background-image: url('../img/navbgrooter_light.png'); 
   background-size: 100% 50%; 
   background-repeat: no-repeat; 
   margin: 0
-}
-
-.row {
-  display: flex;
-  justify-content: center;
-}
-
-.column {
-  flex: 33.33%;
-  padding: 5px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  max-height: 50%;
-  max-width: 80%;
-  height: auto;
-}
-
-.button {
-  background-color: #1D0B37;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-  color: white;
-  padding: 5px 25px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 10px; 
-  font-family: Pacifico;
-}
-
-.centerbutton {
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-
-.conteinerbutton {
-  position: relative;
-}
-
-embed {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-  max-width: 400px;
-  height: auto;
-}
-
-figcaption {
-  font-family: Roboto;
-  color: white;
 }

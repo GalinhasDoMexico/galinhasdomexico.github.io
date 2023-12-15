@@ -2,25 +2,31 @@
 <title>Scripts | Projetos / COFM Brasil</title>
 <link rel="icon" href="../img/favicon/avatar.png" type="image/x-icon">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="title" content="Scripts | Projetos / COFM Brasil">
-  <meta name="description" content="Veja scripts feitos por mim (ou não)"
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content=".../img/metabgindex.png">
-  <meta name="author" content="ChickenOfMexico'>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="title" content="Scripts | Projetos / COFM Brasil">
+<meta name="description" content="Veja alguns scripts criados (ou não) por mim.">
+<meta name="theme-color" content="#1D0B37">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="./img/metabgindex.png">
+<meta name="twitter:site" content="@GalinhasDoMexico">
+<meta name="twitter:creator" content="@ChickenOfMexico">
 
 <!-- Fonte e CSS -->
 
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Pacifico">
-  <link rel="stylesheet" href="../css/scripts-style.css">
+  <link rel="stylesheet" href="../css/scripts-style.css" id="theme-style">
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
-<nav style="background-image: url('../img/navbg.png'); background-size: 100% 100%; background-repeat: no-repeat;">
+<nav>
  <br>
-  <i><a style="font-family: Pacifico" class="nav-settings" href="../">Página Inicial</a></i>
-  <i><a style="font-family: Pacifico" class="nav-settings" href="../projects">Projetos</a></i>
-  <i><a style="font-family: Pacifico" class="nav-settings" href="../about-me">Sobre Mim</a></i>
+  <a style="font-family: Pacifico" class="nav-settings" href="../">Página Inicial</a>
+  <a style="font-family: Pacifico" class="nav-settings" href="../projects">Projetos</a>
+  <a style="font-family: Pacifico" class="nav-settings" href="../about-me">Sobre Mim</a>
+  <a onclick="myFunction()" id="theme-button">
+    <img style="width: auto; height: 5%; max-width: 10%; margin-right:20px; cursor: pointer;" align="right" src="../img/flashbang.svg" id="theme-icon">
+  </a>
  <br>
  <br>
  <br>
@@ -28,14 +34,14 @@
 </nav>
 
 <body>
-
+  <script src="../js/scripts-theme-switcher.js"></script> 
 <h1 class="title">Scripts | Projetos</h1>
 
 <p class="text">Olá, aqui você verá scripts que foram (ou não) criados por mim.</p>
 <p class="text" style="margin: 1">Lembrando que, os scripts podem estar quebrados, ter grandes chances de explodirem seu computador, feitos com as coxas e etc...</p>
-<nav>
+<nav style="background-image: none;">
  <br>
-  <i><a style="font-family: Pacifico" class="nav-active" href="../projects/scripts">Scripts</a></i>
+  <a style="font-family: Pacifico" class="nav-active" href="../projects/scripts">Scripts</a>
  <br>
 </nav>
 <br>
@@ -64,15 +70,17 @@
 <div class="row">
   <div class="column">
     <img src="https://i.ytimg.com/vi/Qb884krIWxA/maxresdefault.jpg" style="width:100%">
+    <figcaption>Aparece quando estiver entre <br> 0% a 50% (CPU ou RAM)</figcaption>
   </div>
   <div class="column">
     <img src="https://media.tenor.com/nFyjFsyn5j8AAAAd/scout-tf2-tf2.gif" style="width:100%">
+    <figcaption style="text-align: center;">Aparece quando estiver entre <br> 50% a 80% (CPU ou RAM)</figcaption>
   </div>
   <div class="column">
     <img src="https://s2-techtudo.glbimg.com/_V0iOO96UtwQBEwT4-jd_n8Urso=/0x0:695x395/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2018/s/p/bpAoUXQVGlgd3UssBLAA/tela-azul-da-morte-windows-10.jpg" style="width:100%">
+    <figcaption style="text-align: right;">Aparece quando estiver entre <br> 86% a 100% (CPU ou RAM)</figcaption>
   </div>
 </div>
-<p class="text" style="text-align: left; display: inline-block; flex-direction: row; padding: 0 120 0">Aparece quando estiver entre <br> 0% a 50% (CPU ou RAM)</p> <p class="text" style="text-align: center; display: inline-block; flex-direction: row; padding: 0 100 0">Aparece quando estiver entre <br> 50% a 80% (CPU ou RAM)</p> <p class="text" style="text-align: right; display: inline-block; flex-direction: row; padding: 0 110 0">Aparece quando estiver entre <br> 86% a 100% (CPU ou RAM)</p>
 <br>
 <br>
 <br>
@@ -106,15 +114,21 @@ function copiarTexto() {
   xhr.send();
 }
 </script>
-<h3 class="footer" style="background-image: url('../img/navbgrooter.png'); background-size: 100% 100%; background-repeat: no-repeat; margin: 0">
- <br>
- <br>
- <br>
-  <i><a style="font-family: Pacifico" class="nav-settings" href="../">Página Inicial</a></i>
-  <i><a style="font-family: Pacifico" class="nav-settings" href="../projects">Projetos</a></i>
-  <i><a style="font-family: Pacifico" class="nav-settings" href="../about-me">Sobre Mim</a></i>
- <br>
- <br>
-</h3>
+<footer>
+  <br>
+  <br>
+  <br>
+   <a style="font-family: Pacifico" class="nav-settings" href="./">Página Inicial</a>
+   <a style="font-family: Pacifico" class="nav-settings" href="./projects">Projetos</a>
+   <a style="font-family: Pacifico" class="nav-settings" href="./about-me">Sobre Mim</a>
+  <div class="rooter-social-bg">
+  <br>
+  <hr style="width: 30%;">
+  <br>
+    <a class="rooter-social" href="https://twitter.com/ChickenOfMexico">X/Twitter</a> <a class="rooter-social" href="https://youtube.com/@ChickenOfMexico">YouTube</a> <a class="rooter-social" href="https://youtube.com/@GalinhasDoMexico">YouTube 2</a>
+  <br>
+  <br>
+ </div>
+ </footer>
 </body>
 </html>
