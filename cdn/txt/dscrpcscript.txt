@@ -1,0 +1,57 @@
+import time
+import traceback
+from pypresence import Presence
+import psutil
+import pygetwindow as gw
+
+def get_system_info():
+    # Obtém informações do sistema usando psutil
+    cpu_percent = psutil.cpu_percent()
+    ram_percent = psutil.virtual_memory().percent
+
+    # Obtém a lista de janelas em primeiro plano
+    foreground_windows = gw.getWindowsWithTitle('')
+    foreground_apps = [window.title for window in foreground_windows]
+
+    return cpu_percent, ram_percent, foreground_apps
+
+def get_large_image(cpu_percent, ram_percent):
+    if 50 <= cpu_percent <= 85 or 50 <= ram_percent <= 85:
+        return 'https://media.tenor.com/nFyjFsyn5j8AAAAd/scout-tf2-tf2.gif'
+    elif 86 <= cpu_percent <= 100 or 86 <= ram_percent <= 100:
+        return 'https://s2-techtudo.glbimg.com/_V0iOO96UtwQBEwT4-jd_n8Urso=/0x0:695x395/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2018/s/p/bpAoUXQVGlgd3UssBLAA/tela-azul-da-morte-windows-10.jpg'
+    else:
+        return 'https://i.ytimg.com/vi/Qb884krIWxA/maxresdefault.jpg'
+
+try:
+    client_id = 'XXXXXXXXXXXXXX'
+    RPC = Presence(client_id)
+    RPC.connect()
+
+    while True:
+        # Obtém informações do sistema
+        cpu_percent, ram_percent, foreground_apps = get_system_info()
+
+        # Obtém a URL para a imagem grande com base nos limites de CPU e RAM
+        large_image_url = get_large_image(cpu_percent, ram_percent)
+
+        # Atualiza as informações no Discord Rich Presence
+        RPC.update(
+            large_image=large_image_url,
+            large_text=None,
+            small_image=None,
+            small_text=None,
+            details=f'CPU: {cpu_percent}% | RAM: {ram_percent}%',
+            state=f'Foreground processes: {len(foreground_apps)}',
+            buttons=None,
+        )
+
+        time.sleep(15)  # pausa por 15 segundos entre cada atualização
+
+except Exception:
+    traceback.print_exc()
+
+finally:
+    RPC.close()
+
+input('Pressione Enter para sair...')

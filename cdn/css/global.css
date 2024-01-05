@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@font-face {
+  font-family: unisans;
+  src: url(../fonts/unisans.otf);
+}
+
+:root {
+    --body-color: #000000;
+    --white-color: #ffffff;
+    --roboto: Roboto;
+    --text-decoration: none;
+    --text-align-center: center;
+    --font-style: normal;
+
+    --nav-rooter-margin: 10px;
+    --nav-background-image: url('../img/navbg.png');
+    --rooter-background-image: url('../img/navbgrooter.png');
+    --rooter-background-color: #191919;
+
+    --body-background-image: url('../img/backgroundsite_dark.png');
+
+    /* projects.html */
+    --projects-mine-background-image: url('../img/projects/minecraftbg.png');
+    --projects-other-background-image: url('../img/backgroundsite_dark.png');
+}
+
+body {
+    background-image: var(--body-background-image);
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: cover;
+    margin: 0 0 0
+}
+
+nav {
+    background-image: var(--nav-background-image);
+    background-size: 100% 100%; 
+    background-repeat: no-repeat; 
+    text-align: var(--text-align-center);
+  }
+  
+.nav-active {
+    color: #8a56f7;
+    text-decoration: var(--text-decoration);
+    font-style: var(--font-style);
+    margin-left: var(--nav-rooter-margin);
+    margin-right: var(--nav-rooter-margin);
+}
+  
+.nav-settings {
+    color: var(--white-color);
+    text-decoration: var(--text-decoration);
+    font-style: var(--font-style);
+    margin-left: var(--nav-rooter-margin);
+    margin-right: var(--nav-rooter-margin);
+}
+
+.language-selector {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+label {
+    margin-right: 10px;
+}
+
+select {
+    background-color: var(--body-color);
+    color: var(--white-color);
+    font-family: Pacifico;
+    border: 1px solid var(--body-color);
+    border-radius: 8px;
+    padding: 8px;
+    appearance: none;
+    cursor: pointer;
+    margin-left: 1%;
+    margin-top: -2%;
+}
+
+/* Estilize a seta do seletor */
+select::-ms-expand {
+    display: none;
+}
+
+/* Estilize a seta do seletor para navegadores não-Edge */
+select::-webkit-select-arrow {
+    display: none;
+}
+
+/* Adicione um ícone personalizado para a seta */
+select::after {
+    content: '\25BC'; /* Unicode para a seta para baixo */
+    font-size: 14px;
+    margin-left: 5px;
+    
+}
+
+option {
+    color: var(--white-color);
+    background-color: transparent;
+    font-family: Pacifico;
+}
+
+.title {
+    color: var(--white-color);
+    text-align: var(--text-align-center);
+    margin: 30;
+    font-family: var(--roboto)
+}
+  
+.text {
+    color: var(--white-color);
+    text-align: var(--text-align-center);
+    font-family: var(--roboto);
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    box-shadow: 0px 0px 8px #000000;
+  }
+
+.rooter-social-bg {
+    background-color: var(--rooter-background-color);
+    background-size: 100% 100%;
+    margin: 0;
+    text-align: var(--text-align-center);
+}
+  
+.rooter-social {
+    font-family: unisans;
+    color: var(--white-color);
+    text-decoration: var(--text-decoration);
+    font-style: var(--font-style);
+    margin-left: var(--nav-rooter-margin);
+    margin-right: var(--nav-rooter-margin);
+}
+  
+footer {
+    color: var(--white-color);
+    text-align: var(--text-align-center);
+    font-family: var(--roboto);
+    font-style: var(--font-style);
+    margin-top: 50;
+    background-image: var(--rooter-background-image);
+    background-size: 100% 50%; 
+    background-repeat: no-repeat; 
+    margin: 0;
+    position:absolute;
+    width:100%;
+}
+
+/* Modo claro (MrPowerGamerBR be like) */
+
+.light-mode {
+    --body-color: #ffffff;
+    --white-color: #000000;
+    --roboto: Roboto;
+    --text-decoration: none;
+    --text-align-center: center;
+    --font-style: normal;
+
+    --nav-rooter-margin: 10px;
+    --nav-background-image: url('../img/navbg_light.png');
+    --rooter-background-image: url('../img/navbgrooter_light.png');
+    --rooter-background-color: #BBBBBB; 
+
+    --body-background-image: url('../img/backgroundsite_light.png');
+
+    /* projects.html */
+    --projects-mine-background-image: url('../img/projects/minecraftbg_light.png');
+}

@@ -1,0 +1,148 @@
+/* all */
+.body-color {
+  background-color: var(--body-color);
+  background-image: none;
+}
+
+figcaption {
+  font-family: var(--roboto);
+  color: var(--white-color);
+}
+
+/* index.html */
+.index-img {
+  border-radius: 160px;
+} 
+
+.index-center {
+  display: block;
+  margin-top: 80;
+  margin-left: auto;
+  margin-right: auto;
+  max-height: 100%;
+  max-width: 100%;
+  box-shadow: 0px 0px 8px #000000;
+}
+
+.footer-index {
+  color: var(--white-color);
+  text-align: var(--text-align-center);
+  font-family: var(--roboto);
+  font-style: var(--font-style);
+  margin-top: 50;
+  background-image: var(--rooter-background-image);
+  background-size: 100% 50%; 
+  background-repeat: no-repeat; 
+  margin: 0;
+  bottom: -10%;
+  position:absolute;
+  width:100%;
+}
+
+/* about-me.html */
+.aboutme-text {
+  color: var(--white-color);
+  font-family: var(--roboto);
+  text-align: justify;
+  max-width: 900px;
+  padding: 25px;
+  margin: auto;
+}
+
+.aboutme-status {
+  display: flex;
+  justify-content: center;
+}
+
+.aboutme-status2 {
+  margin: 0 5px;
+}
+
+@media (max-width: 767px) {
+  .aboutme-status {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .aboutme-status2 {
+    margin: 10px 0;
+  }
+}
+
+/* projects/minecraft.html */
+.minebodyimg {
+  background-image: var(--projects-mine-background-image);
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: cover;
+}
+
+/* projects/minecraft.html and projects/design-2d */
+.mine-column {
+  text-align: center;
+  padding: 5%;
+}
+
+.mine-row {
+  display: flex;
+  justify-content: center;
+}
+
+/* projects/scripts.html */
+.button {
+  background-color: #1D0B37;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+  padding: 5px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 10px; 
+  font-family: Pacifico;
+}
+
+.centerbutton {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.conteinerbutton {
+  position: relative;
+}
+
+embed {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+
+div.list {
+  text-align: var(--text-align-center);
+}
+
+ul.myUL {
+  display: inline-block;
+  text-align: left;
+  color: var(--white-color);
+  font-family: var(--roboto);
+}
+
+.scripts-column {
+  flex: 33.33%;
+  padding: 5px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-height: 50%;
+  max-width: 80%;
+  height: auto;
+}
