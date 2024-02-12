@@ -1,0 +1,102 @@
+<html>
+<head>
+    <title>Música / Sobre Mim / COFM Brasil</title>
+<link rel="icon" href="/cdn/img/favicon/avatar.png" type="image/x-icon">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="title" content="Música / Sobre Mim / COFM Brasil">
+<meta name="description" content="Ouça músicas que eu gosto">
+<meta name="theme-color" content="#1D0B37">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="/cdn/img/metabgindex.png">
+<meta name="twitter:site" content="@GalinhasDoMexico">
+<meta name="twitter:creator" content="@ChickenOfMexico">
+
+<!-- Fonte e CSS -->
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Pacifico">
+  <link rel="stylesheet" href="/cdn/css/global.css">
+
+<style>#player-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--body-color);
+  border: 10px solid var(--rooter-background-color);
+  border-radius: 10px;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+    
+#youtube-player {
+  width: 100%;
+  height: 70%; /* Ajuste conforme necessário */
+}
+    
+/* Estilos para o botão */
+.button-player {
+  background-color: #1D0B37;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+  padding: 15px 30px; /* Ajuste conforme necessário */
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px; /* Ajuste conforme necessário */
+  font-family: Roboto;
+  margin-left: 3px; /* Espaçamento entre os botões */
+  display: flex;
+  align-items: center;
+}
+    
+/* Estilos para o ícone (SVG) */
+.icon {
+  fill: #000000;
+  width: 30px; /* Ajuste conforme necessário */
+  height: 30px; /* Ajuste conforme necessário */
+  transition: fill 0.3s; /* Transição de cor suave */
+}
+    
+/* Estilos para alterar a cor do ícone quando o botão é hover/foco */
+.button-player:hover .icon,
+.button-player:focus .icon {
+    fill: #8c00ff; /* Cor roxa (ajuste conforme necessário) */
+}    
+</style>
+</head>
+<body>
+<script src="https://www.youtube.com/iframe_api"></script>
+<script src="/cdn/js/playlist-player.js"></script>
+<div id="player-container">
+    <div id="youtube-player"></div>
+    <div id="player-buttons" style="display: flex; padding:10px">
+      <!-- Botão Previous -->
+      <a style="padding: 5px 7px; margin-left: 1%;" class="button-player" id="previousBtn" onclick="prevVideo()">
+      ﹤
+      </a>
+  
+      <!-- Botão Play/Pause -->
+      <a style="padding: 5px 7px;" class="button-player" id="playPauseBtn" onclick="playPause()">
+      Play/Pause
+      </a>
+  
+      <!-- Botão Next -->
+      <a style="padding: 5px 7px;" class="button-player" id="nextBtn" onclick="nextVideo()">
+      ﹥
+      </a>
+  
+      <!-- Botão Loop -->
+      <a style="padding: 5px 7px;" class="button-player" id="loopBtn" onclick="loop()">
+      Loop
+      </a>
+    </div>
+  </div>
+</body>
+</html>

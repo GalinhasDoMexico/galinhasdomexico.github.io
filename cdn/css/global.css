@@ -18,6 +18,10 @@
     --nav-background-image: url('../img/navbg.png');
     --rooter-background-image: url('../img/navbgrooter.png');
     --rooter-background-color: #191919;
+    --rooter-hr-main: #272727;
+    --rooter-invert-lastfm: invert(0%);
+
+    --svg-fill-color: white;
 
     --body-background-image: url('../img/backgroundsite_dark.png');
 
@@ -31,7 +35,8 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed; 
     background-size: cover;
-    margin: 0 0 0
+    margin: 0 0 0;
+    transition: background-image 0.5s ease;
 }
 
 nav {
@@ -39,6 +44,7 @@ nav {
     background-size: 100% 100%; 
     background-repeat: no-repeat; 
     text-align: var(--text-align-center);
+    transition: background-image 0.5s ease;
   }
   
 .nav-active {
@@ -47,6 +53,7 @@ nav {
     font-style: var(--font-style);
     margin-left: var(--nav-rooter-margin);
     margin-right: var(--nav-rooter-margin);
+    transition: color 0.5s ease;
 }
   
 .nav-settings {
@@ -55,6 +62,7 @@ nav {
     font-style: var(--font-style);
     margin-left: var(--nav-rooter-margin);
     margin-right: var(--nav-rooter-margin);
+    transition: color 0.5s ease;
 }
 
 #menu {
@@ -131,6 +139,7 @@ select {
     cursor: pointer;
     margin-left: 1%;
     margin-top: -2%;
+    transition: color 0.5s ease, background-color 0.5s ease, border 0.5s ease;
 }
 
 /* Estilize a seta do seletor */
@@ -161,13 +170,15 @@ option {
     color: var(--white-color);
     text-align: var(--text-align-center);
     margin: 30;
-    font-family: var(--roboto)
+    font-family: var(--roboto);
+    transition: color 0.5s ease;
 }
   
 .text {
     color: var(--white-color);
     text-align: var(--text-align-center);
     font-family: var(--roboto);
+    transition: color 0.5s ease;
 }
 
 .center {
@@ -178,28 +189,19 @@ option {
     max-width: 600px;
     height: auto;
     box-shadow: 0px 0px 8px #000000;
-  }
-
-.gif-rooter-container {
-    display: inline-block;
-    bottom: 10px;
 }
 
-.gif-clickable-area {
-    position: absolute;
-    width: auto; 
-    height: 25%; 
-    max-width: 50%; 
-    margin-left: 45%; 
-    margin-top: -40px;
-    cursor: pointer;
+#youtube-player {
+    width: 560px;
+    height: 315px;
 }
-
+ 
 .rooter-social-bg {
     background-color: var(--rooter-background-color);
     background-size: 100% 100%;
     margin: 0;
     text-align: var(--text-align-center);
+    transition: background-color 0.5s ease;
 }
   
 .rooter-social {
@@ -209,8 +211,17 @@ option {
     font-style: var(--font-style);
     margin-left: var(--nav-rooter-margin);
     margin-right: var(--nav-rooter-margin);
+    transition: color 0.5s ease;
 }
   
+.footer-svg {
+    height: 35px; 
+    width: 35px; 
+    fill: var(--svg-fill-color); 
+    padding: -10px;
+    transition: fill 0.5s ease;
+}
+
 footer {
     color: var(--white-color);
     text-align: var(--text-align-center);
@@ -223,6 +234,7 @@ footer {
     margin: 0;
     position:absolute;
     width:100%;
+    transition: background-color 0.5s ease, background-image 0.5s ease, color 0.5s ease;
 }
 
 /* Modo claro (MrPowerGamerBR be like) */
@@ -239,6 +251,10 @@ footer {
     --nav-background-image: url('../img/navbg_light.png');
     --rooter-background-image: url('../img/navbgrooter_light.png');
     --rooter-background-color: #BBBBBB; 
+    --rooter-hr-main: #999999;
+    --rooter-invert-lastfm: invert(100%);
+
+    --svg-fill-color: black;
 
     --body-background-image: url('../img/backgroundsite_light.png');
 

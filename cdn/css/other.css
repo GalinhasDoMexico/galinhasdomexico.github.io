@@ -31,10 +31,10 @@ figcaption {
   font-style: var(--font-style);
   margin-top: 50;
   background-image: var(--rooter-background-image);
-  background-size: 100% 50%; 
+  background-size: 100% 40%; 
   background-repeat: no-repeat; 
   margin: 0;
-  bottom: -10%;
+  bottom: flex;
   position:absolute;
   width:100%;
 }
@@ -145,4 +145,113 @@ ul.myUL {
   max-height: 50%;
   max-width: 80%;
   height: auto;
+}
+
+/* link/youtube */
+
+#channel-info {
+  text-align: center;
+  padding: 20px;
+}
+
+#profile-picture {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+#channel-details {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+}
+
+#channel-name {
+  font-size: 30px;
+  font-weight: bold;
+  margin-right: 20px;
+  margin-left: 40px;
+  color: var(--white-color);
+  font-family: var(--roboto);
+  transition: color 0.5s ease;
+}
+
+#channel-description {
+  font-size: 16px;
+  margin-right: 20px;
+  margin-left: 40px;
+  margin-top: 10px;
+  color: var(--white-color);
+  font-family: var(--roboto);
+  transition: color 0.5s ease;
+}
+
+#channel-button {
+  margin-top: 10px;
+  background-color: var(--white-color);
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 10px;
+  display: inline-block;
+  margin-left: 40px;
+  color: var(--body-color);
+  font-family: var(--roboto);
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+/* Player */
+    /* Estilos para o contêiner do player */
+#player-container {
+  position: fixed;
+  top: 85%;
+  left: 90%;
+  transform: translate(-50%, -50%);
+  background-color: var(--body-color);
+  border: 10px solid var(--rooter-background-color);
+  border-radius: 10px;
+  padding: 10px;
+  z-index: 1000;
+}
+
+#youtube-player {
+  width: 186.6px;
+  height: 105px;
+}
+
+/* Estilos para o botão */
+.button-player {
+  display: flex;
+  align-items: center;
+  background-color: #1D0B37;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+  padding: 5px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 10px; 
+  font-family: Roboto;
+  margin-right: 3px;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+/* Estilos para o ícone (SVG) */
+.icon {
+  fill: #000000;
+  width: 10px;
+  height: 10px;
+  transition: fill 0.3s ease;
+}
+
+/* Estilos para alterar a cor do ícone quando o botão é hover/foco */
+.button:hover .icon,
+.button:focus .icon {
+    fill: #8c00ff;
+    transition: fill 0.3s ease;
 }
