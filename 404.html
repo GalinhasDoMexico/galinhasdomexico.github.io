@@ -22,44 +22,43 @@
         }
     </style>
 <script>
-// Função para detectar idioma do navegador
-function getBrowserLang() {
-  let lang = navigator.language || navigator.userLanguage;
-  lang = lang.split('-')[0]; // Pega apenas o código de idioma
-  return lang;
-}
+        // Lista de URLs válidas
+        const validUrls = [
+            "/about-me",
+            "/projects/minecraft",
+            "/projects/scripts",
+            "/projects/design-2d",
+            "/link/youtube",
+        ];
 
-// Lista de URLs válidas
-const validUrls = ["about-me", "projects/minecraft", "projects/design-2d", "projects/scripts", "link/youtube"];
+        // Função para verificar se a URL é válida
+        function isValidUrl(url) {
+            return validUrls.includes(url);
+        }
 
-// Mapeamento de redirecionamento com base no idioma
-const languageRedirects = {
-  'en': '/us',
-  'pt': '/br',
-};
+        // Função para redirecionar com base no idioma do navegador
+        function redirectBasedOnLanguage() {
+            // Obtém o idioma do navegador do usuário
+            const userLanguage = navigator.language || navigator.userLanguage;
+            
+            // Verifica se a URL solicitada é válida
+            if (isValidUrl(window.location.pathname)) {
+                // Redireciona para o idioma correspondente
+                if (userLanguage.startsWith('pt')) {
+                    window.location.href = "/br" + window.location.pathname;
+                } else {
+                    window.location.href = "/us" + window.location.pathname;
+                }
+            } else {
+                // Redireciona para o index.html principal se a URL não for válida
+                window.location.href = "/index.html";
+            }
+        }
 
-// Função para construir a URL de redirecionamento
-function buildRedirectUrl(language, url) {
-  let redirectUrl = languageRedirects[language];
-  for (let i = 3; i < url.split('/').length; i++) {
-    redirectUrl += '/' + url.split('/')[i];
-  }
-  return redirectUrl;
-}
-
-// Obter idioma do navegador
-const language = getBrowserLang();
-
-// Obter URL atual
-const url = window.location.href;
-
-// Construir a URL de redirecionamento
-const redirectUrl = buildRedirectUrl(language, url);
-
-// Redirecionar se a URL for válida
-if (validUrls.includes(url.split('/')[1])) {
-  window.location.replace(redirectUrl);
-}
+        // Redireciona para o idioma adequado quando a página é carregada
+        document.addEventListener('DOMContentLoaded', function() {
+            redirectBasedOnLanguage();
+        });
 </script>
 </head>
 <body>
