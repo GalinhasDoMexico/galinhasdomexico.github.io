@@ -40,23 +40,6 @@
       window.location.href = url;
     }
   </script>
-      <script>
-        // Mapeamento de redirecionamento com base no idioma
-        const languageRedirects = {
-            'en': '/us',
-            'pt': '/br',
-            // Adicione mais idiomas conforme necessário
-        };
-
-        // Verificar o idioma do navegador
-        const language = navigator.language.substring(0, 2);
-
-        // Construir a URL de redirecionamento
-        const redirectUrl = languageRedirects[language] || '/'; // Redirecionar para a página inicial se não houver correspondência
-
-        // Redirecionar
-        window.location.replace(redirectUrl);
-    </script>
 </head>
 <body>
     <h1>404 - Page Not Found</h1>
