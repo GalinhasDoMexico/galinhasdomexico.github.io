@@ -21,25 +21,37 @@
             color: #f00;
         }
     </style>
-  <script>
-    // Função para detectar idioma do navegador
-    function getBrowserLang() {
-      let lang = navigator.language || navigator.userLanguage;
-      lang = lang.split('-')[0]; // Pega apenas o código de idioma
-      return lang;
-    }
-    // Lista de URLs válidas
-    const validUrls = ["about-me", "projects/minecraft", "projects/design-2d", "projects/scripts", "link/youtube"];
-    // Redireciona para a página no idioma do navegador
-    let lang = getBrowserLang();
-    let url = window.location.href;
-    // Verifica se a URL é válida
-    let isValidUrl = validUrls.includes(url.split('/')[3]);
-    if (isValidUrl) {
-      url = url.replace(/\/[a-z]{2}\//, `/${lang}/`);
-      window.location.href = url;
-    }
-  </script>
+<script>
+// Função para detectar idioma do navegador
+function getBrowserLang() {
+  let lang = navigator.language || navigator.userLanguage;
+  lang = lang.split('-')[0]; // Pega apenas o código de idioma
+  return lang;
+}
+
+// Lista de URLs válidas
+const validUrls = ["about-me", "projects/minecraft", "projects/design-2d", "projects/scripts", "link/youtube"];
+
+// Mapeamento de redirecionamento com base no idioma
+const languageRedirects = {
+  'en': '/us',
+  'pt': '/br',
+};
+
+// Obter idioma do navegador
+const language = getBrowserLang();
+
+// Obter URL atual
+const url = window.location.href;
+
+// Construir a URL de redirecionamento
+const redirectUrl = languageRedirects[language] + '/' + url.split('/')[3]; // Redirecionar para a página específica no idioma
+
+// Redirecionar se a URL for válida
+if (validUrls.includes(url.split('/')[3])) {
+  window.location.replace(redirectUrl);
+}
+</script>
 </head>
 <body>
     <h1>404 - Page Not Found</h1>
