@@ -38,6 +38,15 @@ const languageRedirects = {
   'pt': '/br',
 };
 
+// Função para construir a URL de redirecionamento
+function buildRedirectUrl(language, url) {
+  let redirectUrl = languageRedirects[language];
+  for (let i = 3; i < url.split('/').length; i++) {
+    redirectUrl += '/' + url.split('/')[i];
+  }
+  return redirectUrl;
+}
+
 // Obter idioma do navegador
 const language = getBrowserLang();
 
@@ -45,10 +54,10 @@ const language = getBrowserLang();
 const url = window.location.href;
 
 // Construir a URL de redirecionamento
-const redirectUrl = languageRedirects[language] + '/' + url.split('/')[3]; // Redirecionar para a página específica no idioma
+const redirectUrl = buildRedirectUrl(language, url);
 
 // Redirecionar se a URL for válida
-if (validUrls.includes(url.split('/')[3])) {
+if (validUrls.includes(url.split('/')[1])) {
   window.location.replace(redirectUrl);
 }
 </script>
