@@ -7,9 +7,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="title" content="About Me / COFM English">
-<meta name="description" content="Veja alguns detalhes sobre mim! :D">
+<meta name="description" content="Veja alguns detalhes About Me! :D">
 <meta name="theme-color" content="#1D0B37">
-<meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="/cdn/img/metabgindex.png">
 <meta name="twitter:site" content="@GalinhasDoMexico">
 <meta name="twitter:creator" content="@ChickenOfMexico">
@@ -21,7 +20,15 @@
   <link rel="stylesheet" href="/cdn/css/other.css">
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <script>
+
+<!-- Scripts -->
+  <script src="/cdn/js/mobile-menu.js"></script>
+  <script src="/cdn/js/theme-switcher.js"></script> 
+  <script src="/cdn/js/choose-language.js"></script>
+  <script src="https://www.youtube.com/iframe_api"></script>
+  <script src="/cdn/js/playlist-player.js"></script>
+
+<script>
     function openPlayerPopup() {
     // Defina a URL do player de música
     const playerUrl = '/cdn/html/player-popup';
@@ -33,30 +40,58 @@
 </head>
 <header>
 <nav>
- <br>
-  <a style="font-family: Pacifico" class="nav-settings" href="./">Home</a>
-  <div class="dropdown">
-    <a href="#" class="nav-settings" style="font-family: Pacifico;">Projects</a>
-    <div class="dropdown-content">
-        <a style="font-family: Pacifico;" href="./projects/scripts">Scripts</a>
-        <a style="font-family: Pacifico;" href="./projects/minecraft">Minecraft</a>
-        <a style="font-family: Pacifico;" href="./projects/design-2d">Design 2D</a>
+<br>
+<div class="navigation-container">
+<a class="nav-settings" href="./">Home</a>
+<div class="dropdown">
+<a href="#" class="nav-settings">Projects</a>
+<div class="dropdown-content">
+    <a href="./projects/scripts">Scripts</a>
+    <a href="./projects/minecraft">Minecraft</a>
+    <a href="./projects/design-2d">Design 2D</a>
+</div>
+   </div>
+   <a class="nav-active" href="./about-me">About Me</a>
+   </div>
+   <a id="theme-button">
+<img class="theme-class" align="right" src="/cdn/img/flashbang.svg" id="theme-icon">
+   </a>
+   <div class="language-selector">
+<select id="language" onchange="changeLanguage()">
+    <option value="us">EN-US</option>
+    <option value="br">PT-BR</option>
+</select>
+   </div>
+   <div class="mobile-menu">
+   <a href="javascript:void(0);" style="transition: color 0.5s ease;" class="menu-icon icon" onclick="myFunction1()">
+     Menu
+   </a>
+<div class="topnav">
+  <div id="myLinks">
+    <a class="nav-settings" href="./">Home</a>
+    <div style="display: flex; align-items: center;">
+      <div class="nav-mobile-settings-container">
+        <a href="javascript:void(1);" onclick="myFunction2()" class="nav-settings" style="margin-left: 55px;">Projects</a>
+        <span href="javascript:void(1);" onclick="myFunction2()" class="footer-svg" style="padding-left: 40px; opacity: 0.7; height: 10px; width: 10px; float: left;" href="javascript:void(1);" onclick="myFunction2()">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+            <path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path>
+          </svg>
+        </span>
+      </div>
     </div>
+      <div id="mySubLinks">
+      <a class="nav-settings" href="./projects/design-2d">Design 2D</a>
+      <a class="nav-settings" href="./projects/minecraft">Minecraft</a>
+      <a class="nav-settings" href="./projects/script">Scripts</a>
+      </div>
+    <a class="nav-active" href="./about-me">About Me</a>
   </div>
-  <a style="font-family: Pacifico" class="nav-active" href="about-me">About Me</a>
-  <a id="theme-button">
-    <img style="width: auto; height: 5%; max-width: 10%; margin-right:20px; cursor: pointer;" align="right" src="../cdn/img/flashbang.svg" id="theme-icon">
-  </a>
-  <div class="language-selector">
-    <select id="language" onchange="changeLanguage()">
-        <option value="us">EN-US</option>
-        <option value="br">PT-BR</option>
-    </select>
-  </div>
- <br>
- <br>
- <br>
- <br>
+</div>
+</div>
+<br>
+<br>
+<br>
+<br>
 </nav>
 </header>
 
@@ -69,18 +104,18 @@
 
 <div class="aboutme-status">
   <div class="aboutme-status2">
-   <img style="height: 22px; width: 100%;" src="https://api.statusbadges.me/badge/playing/349687573867659266?style=for-the-badge" alt="Jogando (Discord)">
+   <img style="height: 22px; width: 100%;" src="https://api.statusbadges.me/badge/playing/431575437257211936?style=for-the-badge" alt="Jogando (Discord)">
   </div>
   <div class="aboutme-status2">
-   <img style="height: 22px; width: 100%;" src="https://api.statusbadges.me/badge/vscode/349687573867659266?style=for-the-badge" alt="Visual Studio Code">
+   <img style="height: 22px; width: 100%;" src="https://api.statusbadges.me/badge/vscode/431575437257211936?style=for-the-badge" alt="Visual Studio Code">
   </div>
   <div class="aboutme-status2">
-   <a href="https://api.statusbadges.me/openspotify/349687573867659266" target="_blank" rel="noopener">
-    <img style="height: 22px; width: 100%;" src="https://api.statusbadges.me/badge/spotify/349687573867659266?style=for-the-badge" alt="Ouvindo no Spotify"></a>
+   <a href="https://api.statusbadges.me/openspotify/431575437257211936" target="_blank" rel="noopener">
+    <img style="height: 22px; width: 100%;" src="https://api.statusbadges.me/badge/spotify/431575437257211936?style=for-the-badge" alt="Ouvindo no Spotify"></a>
   </div>
 </div>
-<p class="aboutme-text" style="text-align: center"><b>He/Him - 19 years old - Single</b></p>
-<p class="aboutme-text">Oops, how are you? Welcome to my website made on <b>GitHub Pages</b>, my name is <b>GalinhasDoMexico</b> (or <b>ChickenOfMexico</b>), I'm <b>19 years old</b>. 
+<p class="aboutme-text" style="text-align: center"><b>He/Him - 20 years old - Single</b></p>
+<p class="aboutme-text">Oops, how are you? Welcome to my website made on <b>GitHub Pages</b>, my name is <b>GalinhasDoMexico</b> (or <b>ChickenOfMexico</b>), I'm <b>20 years old</b>. 
 I'm currently taking an English course and I'm learning how to do pixel art and programming, I'm learning English and thinking about learning programming for a long time, but I ended up not doing it at first, but now I'm learning, in the area of pixel art I'm still starting, I can say that I'm "better" in image editing than drawing lol.
 I like to play, I'm very much a homebody, I don't like to leave the house, I'd rather be doing my thing, listening to music, messing around in games than going out, I've always been like that so I ended up liking it. 
 Speaking of playing I like to play Minecraft and Roblox (yes, that's what you read, I play Minescripi and Boblox), in both games I like to mess around in some way, whether it's doing random things or messing around with random people (or friends) on call.
@@ -89,47 +124,28 @@ Currently I have some projects, you can see them here, but this site will be mor
 If you want to know my social networks or links in general, access my <a href="https://cofm.carrd.co">Carrd</a>.
 <br>
 <br>
+<a title="Opens a popup" onclick="openPlayerPopup()">You can see my playlist with some songs that I like.</a> 
+<br>
 <br>
 A kiss,
 <br>
 ​GalinhasDoMexico.
 </p>
 
-<div id="player-container">
-  <p style="margin-top:-7px; margin-bottom: 3px; background-color: var(--rooter-background-color);" class="text"> SONGS I LIKE</p>
-  <div id="youtube-player"></div>
-  <div id="player-buttons">
-    <!-- Botão Previous -->
-    <a style="padding: 5px 7px; margin-left: 5%;" class="button-player" id="previousBtn" onclick="prevVideo()">﹤</a>
-
-    <!-- Botão Play/Pause -->
-    <a style="padding: 5px 7px;" class="button-player" id="playPauseBtn" onclick="playPause()">Play/Pause</a>
-
-    <!-- Botão Next -->
-    <a style="padding: 5px 7px;" class="button-player" id="nextBtn" onclick="nextVideo()">﹥</a>
-
-    <!-- Botão Loop -->
-    <a style="padding: 5px 7px;" class="button-player" id="loopBtn" onclick="loop()">Loop</a>
-
-    <!-- Botão Abrir em Nova Janela -->
-    <a style="padding: 5px 7px; margin-top: 10px; margin-left: 27%;" class="button-player" onclick="openPlayerPopup()">Open in New Tab</a>
-  </div>
-</div>
-
 <footer>
  <br>
  <br>
  <br>
-  <a style="font-family: Pacifico" class="nav-settings" href="./">Home</a>
+  <a class="nav-settings" href="./">Home</a>
   <div class="dropdown">
-    <a href="#" class="nav-settings" style="font-family: Pacifico;">Projects</a>
+    <a href="#" class="nav-settings">Projects</a>
     <div class="dropdown-footer dropdown-content">
-        <a style="font-family: Pacifico;" href="./projects/scripts">Scripts</a>
-        <a style="font-family: Pacifico;" href="./projects/minecraft">Minecraft</a>
-        <a style="font-family: Pacifico;" href="./projects/design-2d">Design 2D</a>
+        <a href="./projects/scripts">Scripts</a>
+        <a href="./projects/minecraft">Minecraft</a>
+        <a href="./projects/design-2d">Design 2D</a>
     </div>
   </div>
-<a style="font-family: Pacifico" class="nav-active" href="./about-me">About Me</a>
+<a class="nav-active" href="./about-me">About Me</a>
 <div class="rooter-social-bg">
   <br>
   <hr style="width: 30%;">
@@ -143,7 +159,7 @@ A kiss,
     <path d="M225.779 253.403l-18.823-51.007s-30.491 34.026-76.188 34.026c-40.526 0-69.224-35.199-69.224-91.497 0-72.096 36.378-97.891 72.097-97.891 51.584 0 67.997 33.411 82.111 76.205l18.823 58.593c18.813 56.894 54.021 102.609 155.399 102.609 72.701 0 122.026-22.309 122.026-80.914 0-47.49-27.007-72.097-77.418-83.898l-37.494-8.191c-25.807-5.887-33.411-16.412-33.411-34.028 0-19.908 15.808-31.713 41.615-31.713 28.186 0 43.39 10.592 45.687 35.813l58.602-7.003C504.877 21.695 468.496 0 408.693 0c-52.811 0-104.404 19.908-104.404 83.907 0 39.904 19.391 65.085 68.005 76.802l39.904 9.4c29.877 7.013 39.894 19.391 39.894 36.391 0 21.695-21.099 30.494-60.993 30.494-59.21 0-83.908-31.108-97.904-73.893l-19.391-58.593C249.297 28.211 209.998.091 132.014.091 45.791.091 0 54.593 0 147.296c0 89.096 45.697 137.202 127.914 137.202 66.201 0 97.892-31.107 97.892-31.107l-.027.009v.003z"></path>
    </svg></a>
    <hr style="width:100%;height:0.5px;border-width:0;color:var(--rooter-hr-main);background-color:var(--rooter-hr-main)">
-   <p style="margin: 10px; font-size: 10px; bottom: 0;"> GalinhasDoMexico • All rights reserved <b>/</b> <a href="/transparency/log">Version 20240212</a></p>
+   <p style="margin: 10px; font-size: 10px; bottom: 0;"> GalinhasDoMexico • All rights reserved <b>/</b> <a href="/transparency/log">Version 20240401</a></p>
  <br>
 </div>
 </footer>

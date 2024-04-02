@@ -9,7 +9,6 @@
 <meta name="title" content="Minecraft / Projects / COFM English">
 <meta name="description" content="Check out some Minecraft wallpaper/banner projects made by me.">
 <meta name="theme-color" content="#1D0B37">
-<meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="/cdn/img/metabgindex.png">
 <meta name="twitter:site" content="@GalinhasDoMexico">
 <meta name="twitter:creator" content="@ChickenOfMexico">
@@ -22,93 +21,152 @@
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
+<!-- Scripts -->
+  <script src="/cdn/js/mobile-menu.js"></script>
+  <script src="/cdn/js/theme-switcher.js"></script> 
+  <script src="/cdn/js/choose-language.js"></script>
+  <script src="/cdn/js/selector.js"></script>
+
 </head>
 <header>
 <nav>
- <br>
-  <a style="font-family: Pacifico" class="nav-settings" href="../">Página Inicial</a>
+<br>
+  <div class="navigation-container">
+    <a class="nav-settings" href="../">Página Inicial</a>
   <div class="dropdown">
-    <a href="#" class="nav-settings" style="font-family: Pacifico;">Projetos</a>
+    <a href="#" class="nav-settings">Projetos</a>
     <div class="dropdown-content">
-        <a style="font-family: Pacifico;" href="./scripts">Scripts</a>
-        <a style="font-family: Pacifico;  color: #8a56f7;" href="./minecraft">Minecraft</a>
-        <a style="font-family: Pacifico;" href="./design-2d">Design 2D</a>
+      <a class="nav-active" href="./scripts">Scripts</a>
+      <a style="color: #8a56f7;" class="nav-settings" href="./minecraft">Minecraft</a>
+      <a class="nav-settings" href="./design-2d">Design 2D</a>
     </div>
   </div>
-  <a style="font-family: Pacifico" class="nav-settings" href="../about-me">Sobre Mim</a>
-  <a id="theme-button">
-    <img style="width: auto; height: 5%; max-width: 10%; margin-right:20px; cursor: pointer;" align="right" src="/cdn/img/flashbang.svg" id="theme-icon">
-  </a>
-  <div class="language-selector">
-    <select id="language" onchange="changeLanguage()">
+    <a class="nav-settings" href="./about-me">Sobre Mim</a>
+    </div>
+    <a id="theme-button">
+      <img class="theme-class" align="right" src="/cdn/img/flashbang.svg" id="theme-icon">
+    </a>
+    <div class="language-selector">
+      <select id="language" onchange="changeLanguage()">
         <option value="us">EN-US</option>
         <option value="br">PT-BR</option>
-    </select>
+      </select>
+    </div>
+    <div class="mobile-menu">
+    <a href="javascript:void(0);" style="transition: color 0.5s ease;" class="menu-icon icon" onclick="myFunction1()">
+       Menu
+    </a>
+       <div class="topnav">
+         <div id="myLinks">
+           <a class="nav-settings" href="../">Página Inicial</a>
+           <div style="display: flex; align-items: center;">
+             <div class="nav-mobile-settings-container">
+               <a href="javascript:void(1);" onclick="myFunction2()" class="nav-settings" style="margin-left: 55px;">Projetos</a>
+               <span href="javascript:void(1);" onclick="myFunction2()" class="footer-svg" style="padding-left: 40px; opacity: 0.7; height: 10px; width: 10px; float: left;" href="javascript:void(1);" onclick="myFunction2()">
+                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                   <path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path>
+                 </svg>
+              </span>
+            </div>
+          </div>
+            <div id="mySubLinks">
+            <a href="./scripts">Scripts</a>
+            <a style="color: #8a56f7;" href="./minecraft">Minecraft</a>
+            <a href="./design-2d">Design 2D</a>
+          </div>
+          <a class="nav-settings" href="./about-me">Sobre Mim</a>
+        </div>
+      </div>
   </div>
- <br>
- <br>
- <br>
- <br>
+<br>
+<br>
+<br>
+<br>
 </nav>
 </header>
 
 <body class="minebodyimg">
-<script src="/cdn/js/theme-switcher.js"></script>
-<script src="/cdn/js/choose-language.js"></script>
-
 <h1 class="title">Minecraft / Projetos</h1>
 <p class="text">Veja meus projetos de Minecraft</p>
+<div style="text-align: center; margin-top: 5%;">
+  <select id="sectionSelector" class="selectorNav" style="font-family: Days One;" onchange="redirectToSection()">
+    <optgroup style="font-family: Days One;" label="Thumbanils"> 
+      <option value="#rendersdethumbnailantigas" style="font-family: Days One;">Renders de Thumbnail Antigas</option>
+      <option value="#exemplodethumbnails" style="font-family: Days One;">Exemplo de Thumbnails</option>
+    </optgroup>
+    <optgroup style="font-family: Days One;" label="Renders Aleatórias"> 
+      <option value="#rendersantigas" style="font-family: Days One;">Renders Antigas</option>
+    </optgroup>
+    <optgroup style="font-family: Days One;" label="Discord Bot"> 
+      <option value="#loritta" style="font-family: Days One;">Loritta</option>
+    </optgroup>
+  </select>
+</div>
 <br>
 <hr style="width:50%">
 <br>
+<h1 class="topic-title" id="thumbnails"> Thumbnails </h1>
+<div class="mine-main-row">
+<br>
+<br>
+<h1 class="topic-title" id="exemplodethumbnails"> Exemplos de Thumbnails </h1>
+<div class="mine-row">
+<div class="mine-column">
+ <img class="center" src="/cdn/img/projects/minecraft/thumbnails/br/example/Exemplo (Aventura Aquatica).webp" alt="Exemplo Aventura Aquática" width="640" height="288">
+ <figcaption>Exemplo "Aventura Aquática"</figcaption>
+</div>
+<div class="mine-column">
+  <img class="center" src="/cdn/img/projects/minecraft/thumbnails/br/example/Exemplo (Construindo uma Cidade).webp" alt="Exemplo Construindo uma Cidade" width="640" height="288">
+  <figcaption>Exemplo "Construindo uma Cidade"</figcaption>
+</div>
+</div>
+<br>
+<hr style="width:90%;height:0.5px;border-width:0;color:var(--white-color);background-color:var(--rooter-hr-main)">
+<br>
+<h1 class="topic-title" id="rendersdethumbnailantigas"> Renders de Thumbnails Antigas </h1>
+<div class="mine-row">
+<div class="mine-column">
+    <img class="center" src="/cdn/img/projects/minecraft/thumbnails/my/Thumbnail versão 2.png" alt="uma casa bem feita (ou não) - Minecraft Alpha #1" width="640" height="288">
+     <figcaption>Projeto nova thumbnail "uma casa bem feita (ou não) - Minecraft Alpha #1"</figcaption>
+  </div>
+</div>
+</div>
+</div>
+<br>
+<br>
+<hr style="width:50%">
+<br>
+<br>
+<h1 class="topic-title" id="rendersantigas"> Renders Antigas </h1>
+<div class="mine-main-row">
+<div class="mine-row">
 <div class="mine-column">
  <img class="center" src="/cdn/img/projects/minecraft/projeto1.png" alt="Meu Primeiro Wallpaper" width="640" height="288">
  <figcaption>Projeto "Meu Primeiro Wallpaper" (sexta-feira, 1 de setembro de 2023, 19:54:23)</figcaption>
 </div>
-<br>
-<br>
-<hr style="width:50%">
-<br>
-<br>
 <div class="mine-column">
- <img class="center" src="/cdn/img/projects/minecraft/projeto2.png" alt="Meu Segundo Projeto" width="640" height="288">
- <figcaption>Projeto "Chicken and Heras" (segunda-feira, 4 de setembro de 2023, 19:38:30)</figcaption>
+  <img class="center" src="/cdn/img/projects/minecraft/projeto2.png" alt="Meu Segundo Projeto" width="640" height="288">
+  <figcaption>Projeto "Chicken e Herobrine" (segunda-feira, 4 de setembro de 2023, 19:38:30)</figcaption>
 </div>
-<br>
-<br>
-<hr style="width:50%">
-<br>
-<br>
+</div>
 <div class="mine-row">
- <div class="mine-column">
-  <img class="center" src="/cdn/img/projects/minecraft/projeto3.png" alt="uma casa bem feita (ou não) - Minecraft Alpha #1" width="640" height="288">
-   <figcaption>Projeto thumbnail antiga "uma casa bem feita (ou não) - Minecraft Alpha #1" (sexta-feira, 6 de outubro de 2023, 19:18:24)</figcaption>
-</div>
 <div class="mine-column">
-    <img class="center" src="/cdn/img/projects/minecraft/projeto3.png" alt="uma casa bem feita (ou não) - Minecraft Alpha #1" width="640" height="288">
-     <figcaption>Projeto nova thumbnail "uma casa bem feita (ou não) - Minecraft Alpha #1" (sexta-feira, 6 de outubro de 2023, 19:18:24)</figcaption>
-  </div>
-</div>
-<br>
-<br>
-<hr style="width:50%">
-<br>
-<br>
-<div class="mine-row">
- <div class="mine-column">
   <img src="/cdn/img/projects/minecraft/projeto4-1.png" alt="Heras kill Chicken (Cena 1)"  width="100%">
   <figcaption>Projeto "Heras kill Chicken (Cena 1)" (sexta-feira, ‎6‎ de ‎outubro‎ de ‎2023, ‏‎02:34:46)</figcaption>
- </div>
- <div class="mine-column">
+</div>
+<div class="mine-column">
   <img src="/cdn/img/projects/minecraft/projeto4-2.png" alt="Heras kill Chicken (Cena 2)"  width="100%">
   <figcaption>Projeto "Heras kill Chicken (Cena 2)" (sexta-feira, ‎6‎ de ‎outubro‎ de ‎2023, ‏‎02:50:00)</figcaption>
- </div>
+</div>
+</div>
 </div>
 <br>
 <br>
 <hr style="width:50%">
 <br>
 <br>
+<h1 class="topic-title" style="font-family: Pacifico;" id="loritta"> Loritta </h1>
+<div class="mine-main-row">
 <div class="mine-row">
   <div class="mine-column">
    <img src="/cdn/img/projects/minecraft/projeto5-1.png" alt="Loritta vs. Lorrita (sem sangue)"  width="100%">
@@ -119,6 +177,7 @@
    <figcaption>Projeto "Loritta vs. Lorrita (com sangue)" (‎terça-feira, ‎9‎ de ‎janeiro‎ de ‎2024, ‏‎21:05:00)</figcaption>
   </div>
  </div>
+</div>
 <br>
 <br>
 <br>
@@ -126,16 +185,16 @@
   <br>
   <br>
   <br>
-   <a style="font-family: Pacifico" class="nav-settings" href="../">Página Inicial</a>
+   <a class="nav-settings" href="../">Página Inicial</a>
    <div class="dropdown">
-    <a href="#" class="nav-settings" style="font-family: Pacifico;">Projetos</a>
+    <a href="#" class="nav-settings" >Projetos</a>
     <div class="dropdown-footer dropdown-content">
-        <a style="font-family: Pacifico;" href="./scripts">Scripts</a>
-        <a style="font-family: Pacifico;  color: #8a56f7;" href="./minecraft">Minecraft</a>
-        <a style="font-family: Pacifico;" href="./design-2d">Design 2D</a>
+        <a href="./scripts">Scripts</a>
+        <a style="color: #8a56f7;" href="./minecraft">Minecraft</a>
+        <a href="./design-2d">Design 2D</a>
     </div>
   </div>
-  <a style="font-family: Pacifico" class="nav-settings" href="../about-me">Sobre Mim</a>
+  <a class="nav-settings" href="../about-me">Sobre Mim</a>
 <div class="rooter-social-bg">
     <br>
     <hr style="width: 30%;">
@@ -149,7 +208,7 @@
       <path d="M225.779 253.403l-18.823-51.007s-30.491 34.026-76.188 34.026c-40.526 0-69.224-35.199-69.224-91.497 0-72.096 36.378-97.891 72.097-97.891 51.584 0 67.997 33.411 82.111 76.205l18.823 58.593c18.813 56.894 54.021 102.609 155.399 102.609 72.701 0 122.026-22.309 122.026-80.914 0-47.49-27.007-72.097-77.418-83.898l-37.494-8.191c-25.807-5.887-33.411-16.412-33.411-34.028 0-19.908 15.808-31.713 41.615-31.713 28.186 0 43.39 10.592 45.687 35.813l58.602-7.003C504.877 21.695 468.496 0 408.693 0c-52.811 0-104.404 19.908-104.404 83.907 0 39.904 19.391 65.085 68.005 76.802l39.904 9.4c29.877 7.013 39.894 19.391 39.894 36.391 0 21.695-21.099 30.494-60.993 30.494-59.21 0-83.908-31.108-97.904-73.893l-19.391-58.593C249.297 28.211 209.998.091 132.014.091 45.791.091 0 54.593 0 147.296c0 89.096 45.697 137.202 127.914 137.202 66.201 0 97.892-31.107 97.892-31.107l-.027.009v.003z"></path>
      </svg></a>
      <hr style="width:100%;height:0.5px;border-width:0;color:var(--rooter-hr-main);background-color:var(--rooter-hr-main)">
-     <p style="margin: 10px; font-size: 10px; bottom: 0;"> GalinhasDoMexico • Todos os direitos reservados <b>/</b> <a href="/transparency/log">Versão 20240212</a></p>
+     <p style="margin: 10px; font-size: 10px; bottom: 0;"> GalinhasDoMexico • Todos os direitos reservados <b>/</b> <a href="/transparency/log">Versão 20240401</a></p>
    <br>
 </div>
 </footer>

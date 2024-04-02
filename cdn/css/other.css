@@ -37,6 +37,7 @@ figcaption {
   bottom: flex;
   position:absolute;
   width:100%;
+  transition: background-image 0.5s ease, color 0.5s ease;
 }
 
 /* about-me.html */
@@ -47,6 +48,7 @@ figcaption {
   max-width: 900px;
   padding: 25px;
   margin: auto;
+  transition: color 0.5s ease;
 }
 
 .aboutme-status {
@@ -69,15 +71,52 @@ figcaption {
   }
 }
 
+/* projects/* */
+.topic-title {
+  background-color: var(--rooter-background-color);
+  color: var(--white-color);
+  padding: 20px;
+  border-radius: 20px;
+  margin: 0% 5% -5%;
+  font-family: Days One;
+  font-size: 24px;
+  text-align: left;
+  transition: background-color 0.5s ease, color 0.5s ease ;
+}
+
 /* projects/minecraft.html */
 .minebodyimg {
   background-image: var(--projects-mine-background-image);
   background-repeat: no-repeat;
   background-attachment: fixed; 
   background-size: cover;
+  transition: background-image 0.5s ease
 }
 
 /* projects/minecraft.html and projects/design-2d */
+@media (max-width: 768px) {
+  .mine-main-row .mine-row {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .mine-main-row .mine-row img {
+    flex-basis: auto;
+  }
+  .scripts-column {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
+.mine-main-row {
+  background-color: var(--rooter-background-color);
+  color: var(--white-color);
+  padding: 20px;
+  border-radius: 20px;
+  margin: 0% 5%;
+  transition: background-color 0.5s ease;
+}
+
 .mine-column {
   text-align: center;
   padding: 5%;
@@ -86,6 +125,12 @@ figcaption {
 .mine-row {
   display: flex;
   justify-content: center;
+}
+
+.mine-row img {
+  min-width: 200px;
+  flex-basis: calc(50% - 5%);
+  box-shadow: none;
 }
 
 /* projects/scripts.html */
