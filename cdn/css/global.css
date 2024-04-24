@@ -21,6 +21,10 @@
 
     --svg-fill-color: white;
 
+    --link-color: #6c00c5;
+    --link-visited: #8101eb;
+    --link-active: #5e00ac;
+
     /* projects.html */
     --projects-mine-background-image: url('../img/projects/minecraftbg.png');
     --projects-other-background-image: url('../img/backgroundsite_dark.png');
@@ -37,17 +41,17 @@ body {
 
 a {
     cursor: pointer; 
-    color: #6c00c5;
+    color: var(--link-color);
     text-decoration: none;
 }
 
 a:visited {
-    color: #8101eb;
+    color: var(--link-visited);
     text-decoration: none;
 }
 
 a:active {
-    color: #5e00ac;
+    color: var(--link-active);
     text-decoration: none;
 }
 
@@ -357,6 +361,73 @@ footer {
 
     --svg-fill-color: black;
 
+    --link-color: #6c00c5;
+    --link-visited: #8101eb;
+    --link-active: #5e00ac;
+
     /* projects.html */
     --projects-mine-background-image: url('../img/projects/minecraftbg_light.png');
+}
+
+/* LGBT */
+
+.lgbt-mode {
+    --link-lgbt-red: #FF0018;
+    --link-lgbt-orange: #FFA52C;
+    --link-lgbt-yellow: #FFD700;
+    --link-lgbt-green: #008000;
+    --link-lgbt-blue: #0000FF;
+    --link-lgbt-purple: #800080;
+  
+    --link-gradient: repeating-linear-gradient(to right, var(--link-lgbt-red), var(--link-lgbt-orange), var(--link-lgbt-yellow), var(--link-lgbt-green), var(--link-lgbt-blue), var(--link-lgbt-purple));
+
+    --link-lgbt-bi-rosa: #ff0080;
+    --link-lgbt-bi-purple: #a349a4;
+    --link-lgbt-bi-blue: #0000ff;
+
+    --link-bi-color: repeating-linear-gradient(var(--link-lgbt-bi-rosa), var(--link-lgbt-bi-rosa), var(--link-lgbt-bi-purple), var(--link-lgbt-bi-blue), var(--link-lgbt-bi-blue));
+
+    --link-lgbt-trans-lightblue: #00d2ff;
+    --link-lgbt-trans-pink: #ffa6b9;
+    --link-lgbt-trans-white:white;
+
+    --link-trans-color: linear-gradient(to bottom, 
+    var(--link-lgbt-trans-lightblue),   /* Azul claro */
+    var(--link-lgbt-trans-lightblue) 40%,  /* Azul claro */
+    var(--link-lgbt-trans-pink), /* Rosa */
+    var(--link-lgbt-trans-pink) 45%, /* Rosa */
+    var(--link-lgbt-trans-white) 50%,  /* Branco */
+    var(--link-lgbt-trans-white) 52%,  /* Branco */
+    var(--link-lgbt-trans-pink) 40%, /* Rosa */
+    var(--link-lgbt-trans-pink), /* Rosa */
+    var(--link-lgbt-trans-lightblue),
+    var(--link-lgbt-trans-lightblue) 65%); /* Azul claro */
+
+
+    --svg-fill-color: #F5A9B8;
+}
+
+.lgbt-mode a {
+    color: transparent;
+    background-image: var(--link-gradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.lgbt-mode .topic-title {
+    background: var(--link-trans-color);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.lgbt-mode h1 {
+    color: transparent;
+    background-image: var(--link-bi-color);
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.lgbt-mode .footer-svg .st0 {
+    fill: var(--svg-fill-color);
 }

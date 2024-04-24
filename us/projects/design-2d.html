@@ -25,7 +25,9 @@
 <script src="/cdn/js/mobile-menu.js"></script>
 <script src="/cdn/js/theme-switcher.js"></script> 
 <script src="/cdn/js/choose-language.js"></script>
+<script src="/cdn/js/lgbt-mode.js"></script>
 <script src="/cdn/js/selector.js"></script>
+<script src="/cdn/js/updateVersionText.js"></script>
 
 </head>
 <header>
@@ -41,7 +43,7 @@
 <a style="color: #8a56f7;" href="./design-2d">Design 2D</a>
 </div>
 </div>
-<a class="nav-settings" href="./about-me">About Me</a>
+<a class="nav-settings" href="../about-me">About Me</a>
 </div>
 <a id="theme-button">
 <img class="theme-class" align="right" src="/cdn/img/flashbang.svg" id="theme-icon">
@@ -74,7 +76,7 @@
     <a href="./minecraft">Minecraft</a>
     <a style="color: #8a56f7;"  href="./design-2d">Design 2D</a>
   </div>
-  <a class="nav-settings" href="./about-me">About Me</a>
+  <a class="nav-settings" href="../about-me">About Me</a>
 </div>
 </div>
 </div>
@@ -91,7 +93,7 @@
 <div style="text-align: center; margin-top: 5%;">
   <select id="sectionSelector" class="selectorNav" style="font-family: Days One;" onchange="redirectToSection()">
     <optgroup style="font-family: Days One;" label="Discord Bot"> 
-      <option value="#foxy" style="font-family: Days One;">Foxy</option>
+      <option value="#foxy" style="font-family: Days One;">FoxyBot</option>
     </optgroup>
     <optgroup style="font-family: Days One;" label="Discord Banner">
       <option value="#discordbannerchicken" style="font-family: Days One;">ChickenOfMexico's Server</option>
@@ -102,8 +104,8 @@
 <br>
 <hr style="width:50%">
 <br>
-<h1 class="topic-title" id="foxy"> Foxy </h1>
 <div class="mine-main-row">
+<h1 class="topic-title" style="margin-left: -1%; margin-top: -1%;" id="foxy"> FoxyBot </h1>
 <div class="mine-row">
  <div class="mine-column">
   <img src="/cdn/img/projects/design/foxybot/projeto1.webp" alt="foxybot premium tier 1 banner watermarked"  width="100%">
@@ -127,8 +129,8 @@
 </div>
 <br>
 <br>
-<h1 class="topic-title" id="discordbanner"> Discord Banner </h1>
 <div class="mine-main-row">
+<h1 class="topic-title" style="margin-left: -1%; margin-top: -1%;" id="discordbanner"> Discord Banner </h1>
 <br>
 <br>
 <h1 class="topic-title" id="discordbannerchicken"> ChickenOfMexico's Server </h1>
@@ -149,7 +151,7 @@
  </div>
 </div>
 <br>
-<hr style="width:90%;height:0.5px;border-width:0;color:var(--white-color);background-color:var(--rooter-hr-main)">
+<hr style="width:90%">
 <br>
 <h1 class="topic-title" id="discordbannerfoxybot"> FoxyBot </h1>
 <div class="mine-row">
@@ -198,7 +200,7 @@
     <path d="M225.779 253.403l-18.823-51.007s-30.491 34.026-76.188 34.026c-40.526 0-69.224-35.199-69.224-91.497 0-72.096 36.378-97.891 72.097-97.891 51.584 0 67.997 33.411 82.111 76.205l18.823 58.593c18.813 56.894 54.021 102.609 155.399 102.609 72.701 0 122.026-22.309 122.026-80.914 0-47.49-27.007-72.097-77.418-83.898l-37.494-8.191c-25.807-5.887-33.411-16.412-33.411-34.028 0-19.908 15.808-31.713 41.615-31.713 28.186 0 43.39 10.592 45.687 35.813l58.602-7.003C504.877 21.695 468.496 0 408.693 0c-52.811 0-104.404 19.908-104.404 83.907 0 39.904 19.391 65.085 68.005 76.802l39.904 9.4c29.877 7.013 39.894 19.391 39.894 36.391 0 21.695-21.099 30.494-60.993 30.494-59.21 0-83.908-31.108-97.904-73.893l-19.391-58.593C249.297 28.211 209.998.091 132.014.091 45.791.091 0 54.593 0 147.296c0 89.096 45.697 137.202 127.914 137.202 66.201 0 97.892-31.107 97.892-31.107l-.027.009v.003z"></path>
    </svg></a>
    <hr style="width:100%;height:0.5px;border-width:0;color:var(--rooter-hr-main);background-color:var(--rooter-hr-main)">
-   <p style="margin: 10px; font-size: 10px; bottom: 0;"> GalinhasDoMexico • All rights reserved <b>/</b> <a href="/transparency/log">Version 20240401</a></p>
+   <p style="margin: 10px; font-size: 10px; bottom: 0;"> GalinhasDoMexico • All rights reserved <b>/</b> <a href="/transparency/log" class="version">Version 20240401</a></p>
  <br>
 </div>
 </footer>
