@@ -20,11 +20,11 @@ In short, this site was **initially created** to just be **my portfolio**, but I
 [See all tags](https://galinhasdomexico.github.io/blog/tags/ "See all tags")[<sup>[1]</sup>](#1available-only-in-pt-br "Available only in PT-BR") <br>
 [About the Blog](https://galinhasdomexico.github.io/blog/about/ "About the Blog")[<sup>[1]</sup>](#1available-only-in-pt-br "Available only in PT-BR")
 
-* [About Me](/about-me/ "Here's a few things about me.")
+* [About Me](https://galinhasdomexico.github.io/about-me/ "Here's a few things about me.")
 
 * **Projects** <br> 
-[Minecraft](/projects/minecraft/ "Minecraft renders") <br>
-[2D Design](/projects/design-2d/ "2D designs") <br>
+[Minecraft](https://galinhasdomexico.github.io/portfolio/minecraft/ "Minecraft renders") <br>
+[2D Design](https://galinhasdomexico.github.io/portfolio/design-2d/ "2D designs") <br>
 ---
 
 ##### <sup>[1]</sup>Available only in PT-BR
