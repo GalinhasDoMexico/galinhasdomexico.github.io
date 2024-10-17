@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Redirecionando...</title>
+  <link rel="icon" href="/cdn/img/favicon/avatar.webp" type="image/x-icon">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="title" content="Redirecionando... Ou não">
+  <meta name="theme-color" content="#1D0B37">
+  <meta name="twitter:image" content="/cdn/img/metabgindex.webp">
+  <meta name="twitter:site" content="@GalinhasDoMexico">
+  <meta name="twitter:creator" content="@ChickenOfMexico">
+
+  <link rel="stylesheet" href="/cdn/css/global.css">
+</head>
+<body>
+  <script>
+    function redirectBasedOnParams() {
+  const urlParams = new URLSearchParams(window.location.search);
+  const id = urlParams.get('id');
+  const lang = urlParams.get('lang');
+
+  const urlMap = {
+  Bsky: {
+    default: 'https://bsky.app/profile/chickenofmexico.bsky.social'
+  },
+  Lastfm: {
+    default: 'https://last.fm/user/ChickenOfMexico'
+  }
+};
+
+  if (id && urlMap[id]) {
+    const targetUrl = urlMap[id][lang] || urlMap[id].default;
+    window.location.href = targetUrl;
+  } else {
+    console.error('ID inválido ou não encontrado.');
+  }
+}
+
+redirectBasedOnParams();
+  </script>
+</body>
+</html>

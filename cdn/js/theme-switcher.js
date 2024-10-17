@@ -18,30 +18,24 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   function updateThemeIcon(isLightMode) {
-    // Verifique a lógica da página atual
     const currentPage = window.location.pathname;
-
-    // Defina o caminho do ícone com base na lógica da página
     let iconPath;
     if (
-      currentPage === '/br/projects/minecraft' ||
-      currentPage === '/br/projects/scripts' ||
-      currentPage === '/br/projects/design-2d' ||
-      currentPage === '/us/projects/minecraft' ||
-      currentPage === '/us/projects/scripts' ||
-      currentPage === '/us/projects/design-2d'
+      currentPage === '/br/portfolio/minecraft' ||
+      currentPage === '/br/portfolio/scripts' ||
+      currentPage === '/br/portfolio/design-2d' ||
+      currentPage === '/us/portfolio/minecraft' ||
+      currentPage === '/us/portfolio/scripts' ||
+      currentPage === '/us/portfolio/design-2d'
     ) {
       iconPath = isLightMode ? '/cdn/img/smoke.svg' : '/cdn/img/flashbang.svg';
     } else {
       iconPath = isLightMode ? '/cdn/img/smoke.svg' : '/cdn/img/flashbang.svg';
     }
-
-    // Atribua o caminho do ícone ao src
     themeIcon.src = iconPath;
   }
-    // Detecção da página atual
-    const currentPage = window.location.pathname;
 
-    // Imprimir no console
-    console.log('Current Page:', currentPage);
+  // Detecção da página atual
+  const currentPage = window.location.pathname;
+  console.log('Current Page:', currentPage);
 });

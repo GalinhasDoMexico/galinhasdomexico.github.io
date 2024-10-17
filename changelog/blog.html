@@ -1,0 +1,105 @@
+<html lang="pt-br">
+<head>
+
+<title>Blog / Changelog / COFM Brasil</title>
+<link rel="icon" href="/cdn/img/favicon/metadocsicon.webp" type="image/x-icon">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="title" content="Blog / Changelog / COFM Brasil">
+  <meta name="description" content="Veja o log do blog">
+  <meta name="theme-color" content="#1D0B37">
+  <meta name="twitter:image" content="/cdn/img/metabgindex.webp">
+  <meta name="twitter:site" content="@GalinhasDoMexico">
+  <meta name="twitter:creator" content="@ChickenOfMexico">
+
+  <!-- Fonte e CSS -->
+
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Roboto|Pacifico">
+    <link rel="stylesheet" href="/cdn/css/global.css">
+    <link rel="stylesheet" href="/cdn/css/other.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <!-- Scripts -->
+  <script src="/cdn/js/transparencyMobileAlert.js"></script>
+  <script src="/cdn/js/sections.js"></script>
+  <script src="/cdn/js/selector.js"></script>
+  <script src="/cdn/js/lgbt-mode.js"></script>
+  <style>
+    .container {
+      display: block;
+    }
+  
+    .containerMobile {
+      display: none;
+    }
+  
+    @media screen and (max-width: 768px) {
+        select {
+          margin-top: 5%;
+        }
+  
+        html, body {
+          width: 100%;
+          overflow-x: hidden; /* Impede a rolagem horizontal no mobile */
+        }
+  
+        .selectorNavMobile {
+          margin-right: 25%;
+        }
+        
+        .container {
+          display: none;
+        }
+  
+        .containerMobile {
+          display: block;
+          margin-bottom: 10px;
+          text-decoration: none;
+          color: inherit;
+        }
+      }
+  </style>
+</head>
+<body style="background-color: var(--body-color); background-image: none; overflow-x: hidden">
+<div class="container" style="margin-top: 2%;">
+<a class="nav-settings" href="/">< Voltar (Página Inicial)</a>
+<a class="text" style="list-style-type: none; padding: 10px; text-decoration: none; color:purple;" href="https://github.com/GalinhasDoMexico/galinhasdomexico.github.io/commit/">Veja o último commit</a>
+<a class="nav-settings" href="/changelog/website">Atualizações do Website (EN-US)</a>
+</div>
+<div class="containerMobile" style="margin-top: 2%;">
+<details>
+<summary style="font-size: 20px; font-weight: bold;" class="title">Menu</summary>
+<div style="text-align: center;  display: grid;">
+  <a class="nav-settings" href="/">< Voltar (Página Inicial)</a>
+  <a class="nav-settings" style="list-style-type: none; padding: 10px; text-decoration: none; color:purple;" href="https://github.com/GalinhasDoMexico/galinhasdomexico.github.io/commit/">Veja o último commit</a>
+  <a class="nav-settings" href="/changelog/website">Atualizações do Website (EN-US)</a>
+</div>
+<br>
+<hr width="70%">
+</details>
+</div>
+<div class="selectorNavMobile" style="margin-top: 5%;">
+    <select id="sectionSelector" class="selectorNav" onchange="redirectToSection()">
+        <option value="#atualizacao20241016">Atualização 2024.10.16</option>
+    </select>
+</div>
+<br>
+<br>
+<div class="sectionLog">
+<details>  
+  <summary style="margin-bottom: 5px; cursor: pointer; font-family: Roboto;" title="Clique para expandir" class="sectionLogH1" id="atualizacao202401016">Atualização 2024.10.16</summary>
+  <div>
+    <li class="text" style="list-style-type: none;"> <b style="color:green">+</b> Adicionado <code>blog.css</code>; </li>
+    <li class="text" style="list-style-type: none;"> <b style="color:green">+</b> Adicionado página inicial para os posts do Blog; </li>
+    <li class="text" style="list-style-type: none;"> <b style="color:green">+</b> Adicionado sistema de pesquisa com tags para o Blog; </li>
+    <li class="text" style="list-style-type: none;"> <b style="color:green">+</b> Adicionado scripts exclusivos para o Blog; </li>
+    <li class="text" style="list-style-type: none;"> <b style="color:green">+</b> Adicionado páginas para mostrar todas as tags e sobre do Blog; </li>
+    <li class="text" style="list-style-type: none;"> <b style="color:greenyellow">+</b> Criado layout para os posts no Blog; </li>
+  </div>
+</div>
+</details>
+</body>
+</html>

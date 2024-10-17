@@ -68,72 +68,23 @@
 .button-player:hover .icon,
 .button-player:focus .icon {
     fill: #8c00ff; /* Cor roxa (ajuste conforme necessário) */
-}    
+}
+
+#playlistButtons {
+    display: none;
+}
 </style>
 </head>
 <body>
 <script src="https://www.youtube.com/iframe_api"></script>
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-  const playPauseButton = document.getElementById('playPauseBtn');
-  const loopButton = document.getElementById('loopBtn'); // Presença mantida, mas sem funcionalidade
-  const playPauseText = document.getElementById('playPauseText');
-  const loopText = document.getElementById('loopText'); // Presença mantida, mas sem funcionalidade
-
-  // Inicializar playerState
-  let playerState = 'Pausado';
-
-  // Carregar lastPlayedVideoId do localStorage
-  const savedVideoId = localStorage.getItem('lastPlayedVideoId');
-
-  // ... (resto do código, incluindo a configuração do player de vídeo)
-
-  function playPause() {
-    playerState = playerState === 'Pausado' ? 'Tocando' : 'Pausado';
-    updatePlayPauseButtonText(playerState);
-  }
-
-  function onPlayerStateChange(event) {
-    playerState = event.data === YT.PlayerState.PLAYING ? 'Tocando' : 'Pausado';
-    updatePlayPauseButtonText(playerState);
-
-    // Salvar lastPlayedVideoId no localStorage
-    if (event.data === YT.PlayerState.ENDED) {
-      localStorage.setItem('lastPlayedVideoId', playlist[currentVideoIndex]);
-    }
-  }
-
-  function updatePlayPauseButtonText(state) {
-    playPauseText.textContent = state === 'Pausado' ? 'Play' : 'Pause';
-  }
-
-  // Função loop() e atualização de loopText removidas
-});
-</script>
+<div id="player"></div>
+<button id="togglePlaylistsBtn">Playlists</button>
+<div id="playlistButtons">
+    <button class="playlistBtn" data-playlist-id="PLXRPF-CsA76cdxug2-T3VQTWvj6rkJiYJ">Yung Lixo</button>
+    <button class="playlistBtn" data-playlist-id="PLupIHaVgCHAAsOD4ACDFyUGuZ2Auz82xv">Sadstation</button>
+</div>
+<button id="playPauseBtn">Play/Pause</button>
+<button id="loopBtn">Loop</button>
 <script src="/cdn/js/playlist-player.js"></script>
-<div id="player-container">
-    <div id="youtube-player"></div>
-    <div id="player-buttons" style="display: flex; padding:10px">
-      <!-- Botão Previous -->
-      <a style="padding: 5px 7px; margin-left: 1%;" class="button-player" id="previousBtn" onclick="prevVideo()">
-      ﹤
-      </a>
-  
-      <!-- Botão Play/Pause -->
-      <a style="padding: 5px 7px;" class="button-player" id="playPauseBtn" onclick="playPause()">
-      Play/Pause
-      </a>
-  
-      <!-- Botão Next -->
-      <a style="padding: 5px 7px;" class="button-player" id="nextBtn" onclick="nextVideo()">
-      ﹥
-      </a>
-  
-      <!-- Botão Loop -->
-      <a style="padding: 5px 7px;" class="button-player" id="loopBtn" onclick="loop()">
-      Loop
-      </a>
-    </div>
-  </div>
 </body>
 </html>

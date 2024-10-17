@@ -1,0 +1,229 @@
+<html lang="en-us">
+<head>
+
+<title>Website / Changelog / COFM English</title>
+<link rel="icon" href="/cdn/img/favicon/metadocsicon.webp" type="image/x-icon">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="title" content="Website / Changelog / COFM English">
+  <meta name="description" content="View the website log">
+  <meta name="theme-color" content="#1D0B37">
+  <meta name="twitter:image" content="/cdn/img/metabgindex.webp">
+  <meta name="twitter:site" content="@GalinhasDoMexico">
+  <meta name="twitter:creator" content="@ChickenOfMexico">
+
+  <!-- Fonte e CSS -->
+
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Roboto|Pacifico">
+    <link rel="stylesheet" href="/cdn/css/global.css">
+    <link rel="stylesheet" href="/cdn/css/other.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <!-- Scripts -->
+  <script src="/cdn/js/transparencyMobileAlert.js"></script>
+  <script src="/cdn/js/selector.js"></script>
+  <script src="/cdn/js/lgbt-mode.js"></script>
+  
+<style>
+  .container {
+    display: block;
+  }
+
+  .containerMobile {
+    display: none;
+  }
+
+  @media screen and (max-width: 768px) {
+      select {
+        margin-top: 5%;
+      }
+
+      html, body {
+        width: 100%;
+        overflow-x: hidden;
+      }
+
+      .selectorNavMobile {
+        margin-right: 25%;
+      }
+      
+      .container {
+        display: none;
+      }
+
+      .containerMobile {
+        display: block;
+        margin-bottom: 10px;
+        text-decoration: none;
+        color: inherit;
+      }
+    }
+</style>
+</head>
+<body style="background-color: var(--body-color); background-image: none; overflow-x: hidden;">
+<p style="color: red; font-family: Roboto;"> These logs are made in a simple way, not having any kind of help or explanation in many of the cases, the current translation of these logs are done using Bing Translator, any spelling mistakes will not be changed.</p>
+<div class="container">
+<a class="nav-settings" href="/">< Back (Home)</a>
+<a class="text" style="list-style-type: none; padding: 10px; text-decoration: none; color:purple;" href="https://github.com/GalinhasDoMexico/galinhasdomexico.github.io/commit/">See the latest commit</a>
+<a class="nav-settings" href="/changelog/blog">Blog updates (PT-BR)</a>
+</div>
+<div class="containerMobile">
+<details>
+  <summary style="font-size: 20px; font-weight: bold;" class="title">Menu</summary>
+  <div style="text-align: center;  display: grid;">
+   <a class="nav-settings" href="/">< Back (Home)</a>
+   <a class="nav-settings" style="list-style-type: none; padding: 10px; text-decoration: none; color:purple;" href="https://github.com/GalinhasDoMexico/galinhasdomexico.github.io/commit/">See the latest commit</a>
+   <a class="nav-settings" href="/changelog/blog">Blog updates (PT-BR)</a>
+  </div>
+  <br>
+  <hr width="70%">
+</details>
+</div>
+<div class="selectorNavMobile">
+    <select id="sectionSelector" class="selectorNav" onchange="redirectToSection()">
+        <option value="#update20241016">Update 2024.10.16</option>
+        <option value="#update20240423">Update 2024.04.23</option>
+        <option value="#update20240401">Update 2024.04.01</option>
+        <option value="#update20240212">Update 2024.02.12</option>
+        <option value="#update20240115">Update 2024.01.15</option>
+        <option value="#update20240110">Update 2024.01.10</option>
+        <option value="#update20240106">Update 2024.01.06</option>
+        <option value="#update20240105">Update 2024.01.05</option>
+    </select>
+</div>
+<br>
+<br>
+<div class="sectionLog">
+<details>
+ <summary style="margin-bottom: 5px; cursor: pointer; font-family: Roboto;" class="sectionLogH1" title="Click to expand" id="update20241016">Update 2024.10.16</summary>
+   <div>
+    <li class="text" style="list-style-type: none;"> <b style="color:#7e00c7">/</b> <code>global.css</code> and <code>style.css</code> modified;</li>
+    <li class="text" style="list-style-type: none;"> <b style="color:#7e00c7">/</b> - <b style="color:green">+</b> Changed Transparency for Changelog, Transparency Log for Website and added log for Blog (only in Portuguese - Brazil);</li>
+    <li class="text" style="list-style-type: none;"> <b style="color:#7e00c7">/</b> Changed images from <code>.png</code> to <code>.webp</code> for optimization;</li>
+    <li class="text" style="list-style-type: none;"> <b style="color:greenyellow">+</b> Added search system for both portfolios ("Minecraft" and "Design 2D");</li>
+    <li class="text" style="list-style-type: none;"> <b style="color:greenyellow">+</b> Added system of adding Nav (Menu) and Footer automatically;</li>
+    <li class="text" style="list-style-type: none;"> <b style="color:green">+</b> Added <code>blog.css</code> and <code>portfolio.css</code>;</li>
+    <li class="text" style="list-style-type: none;"> <b style="color:green">+</b> Added Blog (only in Portuguese - Brazil);</li>
+    <li class="text" style="list-style-type: none;"> <b style="color:green">+</b> Added new javascripts for Portfolio (formerly Projects) and Blog;</li>
+    <li class="text" style="list-style-type: none;"> <b style="color:green">+</b> Added transitions effects;</li>
+    <li class="text" style="list-style-type: none;"> <b style="color:green">+</b> Added new 'title' for better accessibility for the visually impaired;</li>
+    <li class="text" style="list-style-type: none;"> <b style="color:red">-</b> Removed "Scripts" in Portfolio (formerly Projects);</li>
+    <li class="text" style="list-style-type: none;"> <b style="color:red">-</b> Removed player from "About Me"</li>
+    <br>
+    <br>
+    <sup class="text">Special thanks to <a href="https://mrpowergamerbr.com/"> MrPowerGamerBR </a> for the help in internal systems <b style="color: red;">&heartsuit;</b></sup>
+  </div>
+</div>
+</details>
+<br>
+<hr style="width: 30%;">
+<br>
+<div class="sectionLog">
+<details>
+<summary style="margin-bottom: 5px; cursor: pointer; font-family: Roboto;" class="sectionLogH1" title="Click to expand" id="update20240423">Update 2024.04.23</summary>
+   <div>
+    <li class="text" style="list-style-type: none;"> <b style="color:#7e00c7">/</b> <code>global.css</code> modified to add new 'lgbt-mode' theme; </li>
+    <li class="text" style="list-style-type: none;"> <b style="color:green">+</b> Added two (2) new javascripts; </li>
+    <li class="text" style="list-style-type: none;"> <b style="color:green">+</b> Added new SVG;</li>
+    <li class="text" style="list-style-type: none;"> <b style="color:green">+</b> Added new theme;</li>
+  </div>
+</div>
+</details>
+<br>
+<hr style="width: 30%;">
+<br>
+  <div class="sectionLog">
+    <details>
+      <summary style="margin-bottom: 5px; cursor: pointer; font-family: Roboto;" class="sectionLogH1" title="Click to expand" id="update20240401">Update 2024.04.01</summary>
+     <div>
+      <li class="text" style="list-style-type: none;"> <b style="color:#7e00c7">/</b> <code>global.css</code> modified for use in the mobile menu; </li>
+      <li class="text" style="list-style-type: none;"> <b style="color:#7e00c7">/</b> Embed image (meta tag) modified from large_image to small_image; </li>
+      <li class="text" style="list-style-type: none;"> <b style="color:#7e00c7">/</b> Structure of the nav element of the main pages modified to house the mobile menu;</li>
+      <li class="text" style="list-style-type: none;"> <b style="color:#7e00c7">/</b> <code>global.css</code> and <code>style.css</code> modified for better compatibility of images and general elements of mobile pages;</li>
+      <li class="text" style="list-style-type: none;"> <b style="color:#7e00c7">/</b> Design of modified and improved project images;</li>
+      <li class="text" style="list-style-type: none;"> <b style="color:#7e00c7">/</b> Page 404 modified to redirect existing pages without the mandatory use of the 'us' and 'br' keys and redirect non-existent pages to the main index;</li>
+      <li class="text" style="list-style-type: none;"> <b style="color:green">+</b> Added new javascript for the mobile version;</li>
+      <li class="text" style="list-style-type: none;"> <b style="color:green">+</b> Added way to access image categories using '#';</li>
+      <li class="text" style="list-style-type: none;"> <b style="color:green">+</b> Added new images and categories in 'Minecraft' and 'Design 2D' projects;</li>
+      <li class="text" style="list-style-type: none;"> <b style="color:red">-</b> Removed 'about-me' mini-player;</li>
+      <li class="text" style="list-style-type: none;"> <b style="color:red">-</b> Removed background image from pages;</li>
+    </div>
+  </div>
+</details>
+<br>
+<hr style="width: 30%;">
+<br>
+  <div class="sectionLog">
+    <details>
+      <summary style="margin-bottom: 5px; cursor: pointer; font-family: Roboto;" class="sectionLogH1" title="Click to expand" id="update20240212">Update 2024.02.12</summary>
+     <div>
+      <li class="text" style="list-style-type: none;"> <b style="color:#7e00c7">/</b> <code>global.css</code> and other.css modified by adding transitions when changing themes;
+      <li class="text" style="list-style-type: none;"> <b style="color:#7e00c7">/</b> Footer modified to make it easier to access this log;</li>
+      <li class="text" style="list-style-type: none;"> <b style="color:#7e00c7">/</b> Footer social media modified for SVGs;</li>
+      <li class="text" style="list-style-type: none;"> <b style="color:green">+</b> Added sentence system for "br" (Brazilian Portuguese) and "us" (U.S. English);</li>
+      <li class="text" style="list-style-type: none;"> <b style="color:green">+</b> Added playlist system to About Me and separate tab;</li>
+      <li class="text" style="list-style-type: none;"> <b style="color:green">+</b> Added new javascript files;</li>
+      <li class="text" style="list-style-type: none;"> <b style="color:green">+</b> Added new subpage for links;</li>
+      <li class="text" style="list-style-type: none;"> <b style="color:green">+</b> Added new page within the links subpage</li>
+    </div>
+  </div>
+</details>
+<br>
+<hr style="width: 30%;">
+<br>
+  <div class="sectionLog">
+    <details>
+      <summary style="margin-bottom: 5px; cursor: pointer; font-family: Roboto;" class="sectionLogH1" title="Click to expand" id="update20240115">Update 2024.01.15</summary>
+     <div>
+      <li class="text" style="list-style-type: none;"> <b style="color:#7e00c7">/</b> <code>global.css</code> modified; </li>
+      <li class="text" style="list-style-type: none;"> <b style="color:green">+</b> Added new folder called "gif" in cdn;</li>
+      <li class="text" style="list-style-type: none;"> <b style="color:green">+</b> Added 2 new files on cdn;</li>
+      <li class="text" style="list-style-type: none;"> <b style="color:green">+</b> Added way to enter the Website Log (this page) in the footer of the pages</li>
+  </div>
+</details>
+<br>
+<hr style="width: 30%;">
+<br>
+  <div class="sectionLog">
+    <details>
+      <summary style="margin-bottom: 5px; cursor: pointer; font-family: Roboto;" class="sectionLogH1" title="Click to expand" id="update20240110">Update 2024.01.10</summary>
+     <div>
+      <li class="text" style="list-style-type: none;"> <b style="color:green">+</b> Added drop-down menu for "Projects" in "br" (Brazilian Portuguese) and in "us" (U.S. English);</li>
+      <li class="text" style="list-style-type: none;"> <b style="color:green">+</b> Added new JavaScript file for the drop-down menu, new page for site update logs (this page) and two .png images for the "Minecraft Project";</li>
+      <li class="text" style="list-style-type: none;"> <b style="color:green">+</b> Added two new images for "Minecraft Projects" in "br" (Brazilian Portuguese) and "us" (U.S. English)</li>
+  </div>
+</details>
+<br>
+<hr style="width: 30%;">
+<br>
+  <div class="sectionLog">
+    <details>
+      <summary style="margin-bottom: 5px; cursor: pointer; font-family: Roboto;" class="sectionLogH1" title="Click to expand" id="update20240106">Update 2024.01.06</summary>
+     <div>
+      <li class="text" style="list-style-type: none;"> <b style="color:green">+</b> Added "404.html";</li>
+      <li class="text" style="list-style-type: none;"> <b style="color:green">+</b> Added meta tags on "404.html"</li>
+  </div>
+</details>
+<br>
+<hr style="width: 30%;">
+<br>
+  <div class="sectionLog">
+    <details>
+      <summary style="margin-bottom: 5px; cursor: pointer; font-family: Roboto;" class="sectionLogH1" title="Click to expand" id="update20240105">Update 2024.01.05</summary>
+     <div>
+      <li class="text" style="list-style-type: none;"> <b style="color:yellow">*</b> Site reset and added new files for new structure;</li>
+      <li class="text" style="list-style-type: none;"> <b style="color:#7e00c7">/</b> Modified the paths of images, css, javascripts and text document to without the use of "./";
+      <li class="text" style="list-style-type: none;"> <b style="color:green">+</b> Added "br" (Portuguese - Brazil) and "us" (U.S. English) language system;</li>
+      <li class="text" style="list-style-type: none;"> <b style="color:green">+</b> Added 2 global CSS (Decreased from 9 to 2);</li>
+      <li class="text" style="list-style-type: none;"> <b style="color:green">+</b> Added 2 new JavaScript (for the language system)</li>
+  </div>
+</details>
+<br>
+<br>
+<br>
+<br>
+</body>
+</html>

@@ -1,14 +1,23 @@
+function getBrowserLanguage() {
+  return (navigator.language || navigator.userLanguage).toLowerCase();
+}
 
-  function getBrowserLanguage() {
-    return (navigator.language || navigator.userLanguage).toLowerCase();
+// Verifique o idioma no localStorage e redirecione
+const storedLanguage = localStorage.getItem('language');
+
+if (storedLanguage) {
+  // Redirecionar com base no valor armazenado
+  if (storedLanguage === 'br') {
+      window.location.href = '/br/';
+  } else if (storedLanguage === 'us') {
+      window.location.href = '/us/';
   }
-
-  // Verifique o idioma do navegador e redirecione
+} else {
+  // Usar o idioma do navegador se não houver valor no localStorage
   const browserLanguage = getBrowserLanguage();
   if (browserLanguage.includes('pt')) {
-    // Se o idioma for português, redirecione para /br/
-    window.location.href = '/br/';
+      window.location.href = '/br/';
   } else {
-    // Para outros idiomas, redirecione para /us/
-    window.location.href = '/us/';
+      window.location.href = '/us/';
   }
+}

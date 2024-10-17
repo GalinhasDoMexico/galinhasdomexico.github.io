@@ -1,6 +1,18 @@
 document.addEventListener('DOMContentLoaded', function () {
-    // Obter a parte do idioma da URL
-    const languageFromURL = window.location.pathname.split('/')[1];
+    // Obter o atributo 'lang' do elemento html
+    const htmlLang = document.documentElement.lang;
+    let languageFromHTML = '';
+
+    if (htmlLang === 'en-us') {
+        languageFromHTML = 'us';
+    } else if (htmlLang === 'pt-br') {
+        languageFromHTML = 'br';
+    }
+
+    // Salvar o idioma no localStorage, independentemente do clique no seletor
+    if (languageFromHTML) {
+        localStorage.setItem('language', languageFromHTML);
+    }
 
     // Verificar se há um idioma salvo no localStorage
     const savedLanguage = localStorage.getItem('language');
@@ -8,9 +20,6 @@ document.addEventListener('DOMContentLoaded', function () {
     // Se houver, definir o idioma no menu de seleção
     if (savedLanguage) {
         document.getElementById('language').value = savedLanguage;
-    } else if (languageFromURL) {
-        // Se não houver idioma salvo, mas estiver na URL, definir a partir da URL
-        document.getElementById('language').value = languageFromURL;
     }
 
     // Adicionar um ouvinte de evento ao menu de seleção

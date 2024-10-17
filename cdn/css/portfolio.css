@@ -1,0 +1,200 @@
+.hidden-tag {
+  display: none;
+} 
+
+form {
+  margin-left: 37%;
+  margin-top: 10px;
+  animation: fadeIn 2s ease-in-out forwards;
+}
+
+.featured-post span {
+  background-color: #f0e68c;
+  color: var(--black-color);
+  border-radius: 5px;
+  padding: 2px 8px;
+  margin-left: -2%;
+  margin-right: 5px;
+  font-size: 12px;
+}
+
+.FeaturedPurple-post span {
+  background-color: #c300ff;
+  color: var(--black-color);
+  border-radius: 5px;
+  padding: 2px 8px;
+  margin-left: -2%;
+  margin-right: 5px;
+  font-size: 12px;
+}
+
+.portfolio-post {
+  background-image: var(--background-portfolio-search);
+  background-size: 100% 120%;
+  background-repeat: no-repeat;
+  color: var(--white-color);
+  padding: 20px;
+  border-radius: 20px;
+  margin: 0% 5%;
+  transition: background-image 0.5s ease, color 0.5s ease;
+  margin-bottom: 20px;
+  animation: fadeIn 2s ease-in-out forwards;
+}
+
+.portfolio-post img {
+  max-width: 100%;
+}
+
+.portfolio-post b {
+  font-family: var(--roboto);
+  color: var(--portfolio-a);
+  font-weight: bold;
+   transition: color 0.5s ease;
+}
+
+.portfolio-post h2 {
+  color: var(--white-color);
+  margin: 30;
+  font-family: var(--roboto);
+  transition: color 0.5s ease;
+  margin-top: 0;
+}
+
+.portfolio-post p {
+  color: var(--white-color);
+  font-family: var(--roboto);
+  transition: color 0.5s ease;
+  margin-top: 5px;
+  margin-bottom: 4px;
+}
+
+.portfolio-post .tags {
+  margin-bottom: 5px;
+}
+
+.portfolio-post .tags span {
+  background-color: var(--tags-color);
+  border-radius: 5px;
+  padding: 2px 8px;
+  margin-right: 5px;
+  font-size: 12px;
+}
+
+@media screen and (max-width: 768px) {
+form {
+  margin-left: 12.5%;
+  margin-top: 10px;
+}
+
+input[type="text"] {
+  padding: 5px;
+  width: 200px;
+  background: var(--white-color);
+  color: var(--body-color);
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.portfolio-selector {
+  margin-left: 29%;
+  margin-top: 10px;
+}
+
+.portfolio-post span {
+  margin-right: 50%;
+}
+
+.portfolio-image.mobile {
+  margin-top: 5%;
+  margin-left: auto;
+  width: auto;
+  height: auto;
+ }
+}
+
+/* portfolio Posts */
+.portfoliotitle {
+  color: var(--white-color);
+  text-align: var(--text-align-center);
+  margin-left: 10;
+  font-family: var(--roboto);
+  transition: color 0.5s ease;
+}
+
+.portfoliosubtitle {
+  color: var(--white-color);
+  text-align: var(--text-align-center);
+  margin-left: 10;
+  margin-top: -10;
+  font-family: var(--roboto);
+  transition: color 0.5s ease;
+}
+
+.portfoliodivtext {
+  color: var(--white-color);
+  text-align: var(--text-align-center);
+  font-family: var(--roboto);
+  transition: color 0.5s ease;
+}
+
+.portfolioheadsvg {
+  padding-right: 2;
+  fill: #a83dff;
+  height: 15px; 
+  width: 15px; 
+  transition: fill 0.5s ease;
+}
+
+/* Imagem */
+.portfolio-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.portfolio-image {
+ margin-top: -14%;
+ margin-left: 60%;
+ width: 30%;
+ height: auto;
+ cursor: pointer;
+} 
+
+/* Tela cheia */
+.modal {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-y: hidden;
+}
+
+.modal-content {
+  background-color: var(--rooter-background-color);
+  margin: 15% auto;
+  padding: 20px;
+  width: 80%;
+  max-width: 800px;
+  position: relative;
+}
+
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: rgb(102, 102, 102);
+  text-decoration: none;
+  cursor: pointer;
+}
