@@ -3,11 +3,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Verifique se a URL contém "/us/", "/br/" ou "/blog/"
   if (currentPageUrl.includes("/us/")) {
-      updateVersion("Version 20240423", ".version");
+      updateVersion("Version 20241016", ".version");
   } else if (currentPageUrl.includes("/br/")) {
-      updateVersion("Versão 20240423", ".version");
+      updateVersion("Versão 20241016", ".version");
   } else if (currentPageUrl.includes("/blog/")) {
-      updateVersion("Versão Blog 20240831", ".versionblog");
+      updateVersion("Versão Blog 20241016", ".versionblog");
   }
 });
 
