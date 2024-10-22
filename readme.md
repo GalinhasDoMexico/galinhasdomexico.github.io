@@ -1,4 +1,4 @@
-![Nav image](/cdn/img/navbg.webp)
+![Other Background (No Player)](https://galinhasdomexico.github.io/cdn/img/others/other%20background%20(no%20player).png)
 
 # My portfolio and personal website
 
@@ -6,12 +6,12 @@ Welcome to **my portfolio** and **personal website on GitHub**.
 
 The texts in this `readme.md` may be bad or with spelling mistakes because my English is still a bit bad.
 
----
+# 
 
 ### Site summary
 In short, this site was **initially created** to just be **my portfolio**, but I ended up wanting to **implement more things**, such as a **blog**. <br> As I am relatively **new to the programming area**, the site may have **strange or poorly optimized scripts and html** (or **created with the help of A.I**).
 
----
+# 
 
 ### Some links
 
@@ -25,8 +25,7 @@ In short, this site was **initially created** to just be **my portfolio**, but I
 * **Projects** <br> 
 [Minecraft](https://galinhasdomexico.github.io/portfolio/minecraft/ "Minecraft renders") <br>
 [2D Design](https://galinhasdomexico.github.io/portfolio/design-2d/ "2D designs") <br>
+
 ---
 
 ##### <sup>[1]</sup>Available only in PT-BR
-
-![Footer](/cdn/img/navbgrooter.webp)
