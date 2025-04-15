@@ -4,7 +4,7 @@
 
 ---
 
-# [0.1.0-remake] - 2025-02-19
+# [0.1.0-remake] - 2025-04-15
 
 ### Refeito
 - Website completamente refeito.
