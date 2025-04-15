@@ -1,0 +1,292 @@
+{
+  "minecraft pt-br": [
+    {
+      "title": "Meu Primeiro Wallpaper",
+      "description": "Minha primeira render de Minecraft que fiz",
+      "dateText": "Criado há",
+       "date": "2023-09-01",
+       "dateType": "ano,mes,dia",
+      "imageUrl": "/cdn/img/portfolio/minecraft_renders/webp/my_first_wallpaper.webp",
+      "category": "Renders Antigas",
+      "tags": ["ChickenOfMexico"],
+      "isFeaturedPurple": true
+    },
+    {
+      "title": "Chicken e Herobrine",
+      "description": "Eu morrendo para o Herobrine... Resumidamente",
+      "dateText": "Criado há",
+       "date": "2023-09-04",
+       "dateType": "ano,mes,dia",
+      "imageUrl": "/cdn/img/portfolio/minecraft_renders/webp/chicken_and_herobrine.webp",
+      "category": "Renders Antigas",
+      "tags": ["ChickenOfMexico"],
+      "isFeaturedPurple": true
+    },
+    {
+      "title": "Loritta vs. Lorrita",
+      "description": "Bot Loritta contra a Lorrita",
+      "dateText": "Criado há",
+       "date": "2024-01-09",
+       "dateType": "ano,mes,dia",
+      "imageUrl": "/cdn/img/portfolio/minecraft_renders/webp/loritta_vs_lorrita.webp",
+      "category": "Renders Antigas",
+      "tags": ["Loritta"],
+      "isFeaturedPurple": true
+    }
+  ],
+  "minecraft en-us": [
+    {
+      "title": "My First Wallpaper",
+      "description": "My first Minecraft render I made",
+      "dateText": "Created",
+       "date": "2023-09-01",
+       "dateType": "ano,mes,dia",
+      "imageUrl": "/cdn/img/portfolio/minecraft_renders/webp/my_first_wallpaper.webp",
+      "category": "Old Renders",
+      "tags": ["ChickenOfMexico"],
+      "isFeaturedPurple": true
+    },
+    {
+      "title": "Chicken and Herobrine",
+      "description": "I dying to Herobrine ... Briefly",
+      "dateText": "Created",
+       "date": "2023-09-04",
+       "dateType": "ano,mes,dia",
+      "imageUrl": "/cdn/img/portfolio/minecraft_renders/webp/chicken_and_herobrine.webp",
+      "category": "Old Renders",
+      "tags": ["ChickenOfMexico"],
+      "isFeaturedPurple": true
+    },
+    {
+      "title": "Loritta vs. Lorrita ",
+      "description": "Bot Loritta vs. Lorrita",
+      "dateText": "Created",
+       "date": "2024-01-09",
+       "dateType": "ano,mes,dia",
+      "imageUrl": "/cdn/img/portfolio/minecraft_renders/webp/loritta_vs_lorrita.webp",
+      "category": "Old Renders",
+      "tags": ["Loritta"],
+      "isFeaturedPurple": true
+    }
+  ],
+  "design pt-br": [
+    {
+      "title": "Foxy Premium Tier 1",
+      "description": "Relacionado ao Premium da bot FoxyBot",
+      "dateText": "Criado há",
+       "date": "2023-10-08",
+       "dateType": "ano,mes,dia",
+      "imageUrl": "/cdn/img/portfolio/2d_design/webp/discord/bot/foxybot/premium/foxy_premium_tier_1.webp",
+      "category": "Discord Bot",
+      "tags": ["FoxyBot", "Discord Banner"],
+      "isFeaturedPurple": true
+    },
+    {
+      "title": "Foxy Premium Tier 2",
+      "description": "Relacionado ao Premium da bot FoxyBot",
+      "dateText": "Criado há",
+       "date": "2023-10-08",
+       "dateType": "ano,mes,dia",
+      "imageUrl": "/cdn/img/portfolio/2d_design/webp/discord/bot/foxybot/premium/foxy_premium_tier_2.webp",
+      "category": "Discord Bot",
+      "tags": ["FoxyBot", "Discord Banner"],
+      "isFeaturedPurple": true
+    },
+    {
+      "title": "Foxy Premium Tier 3",
+      "description": "Relacionado ao Premium da bot FoxyBot",
+      "dateText": "Criado há",
+       "date": "2023-10-08",
+       "dateType": "ano,mes,dia",
+      "imageUrl": "/cdn/img/portfolio/2d_design/webp/discord/bot/foxybot/premium/foxy_premium_tier_3.webp",
+      "category": "Discord Bot",
+      "tags": ["FoxyBot", "Discord Banner"],
+      "isFeaturedPurple": true
+    },
+    {
+      "title": "Foxy Donate",
+      "description": "Relacionado ao Donate da bot FoxyBot",
+      "dateText": "Criado há",
+       "date": "2023-10-07",
+       "dateType": "ano,mes,dia",
+      "imageUrl": "/cdn/img/portfolio/2d_design/webp/discord/bot/foxybot/premium/foxy_donate.webp",
+      "category": "Discord Bot",
+      "tags": ["FoxyBot", "Discord Banner"],
+      "isFeaturedPurple": true
+    },
+    {
+      "title": "Foxy \"Regras\"",
+      "description": "Banner para canal de texto de Regras no servidor do Discord da Foxy",
+      "dateText": "Não informado",
+       "date": "Não informado",
+       "dateType": "ano,mes,dia",
+      "imageUrl": "/cdn/img/portfolio/2d_design/webp/discord/server/foxybot/chat_banner/foxy_regras_banner.webp",
+      "category": "Discord Server",
+      "tags": ["FoxyBot", "Discord Banner"],
+      "isFeaturedPurple": true
+    },
+    {
+      "title": "Foxy \"Donates\"",
+      "description": "Banner para canal de texto de Donates no servidor do Discord da Foxy",
+      "dateText": "Não informado",
+       "date": "Não informado",
+       "dateType": "ano,mes,dia",
+      "imageUrl": "/cdn/img/portfolio/2d_design/webp/discord/server/foxybot/chat_banner/foxy_donates_banner.webp",
+      "category": "Discord Server",
+      "tags": ["FoxyBot", "Discord Banner"],
+      "isFeaturedPurple": true
+    },
+    {
+      "title": "Foxy \"Feedback\"",
+      "description": "Banner para canal de texto de Feedback no servidor do Discord da Foxy",
+      "dateText": "Não informado",
+       "date": "Não informado",
+       "dateType": "ano,mes,dia",
+      "imageUrl": "/cdn/img/portfolio/2d_design/webp/discord/server/foxybot/chat_banner/foxy_feedback_banner.webp",
+      "category": "Discord Server",
+      "tags": ["FoxyBot", "Discord Banner"],
+      "isFeaturedPurple": true
+    },
+    {
+      "title": "ChickenOfMexico Server's \"Diretrizes\"",
+      "description": "Banner para canal de texto de Diretrizes no meu servidor do Discord (ainda não lançado)",
+      "dateText": "Não informado",
+       "date": "Não informado",
+       "dateType": "ano,mes,dia",
+      "imageUrl": "/cdn/img/portfolio/2d_design/webp/discord/server/chickenofmexico/chat_banner/chicken_diretrizes.webp",
+      "category": "Discord Server",
+      "tags": ["ChickenOfMexico Server's", "Discord Banner"],
+      "isFeaturedPurple": true
+    },
+    {
+      "title": "ChickenOfMexico Server's \"Diretrizes do Suporte\"",
+      "description": "Banner para canal de texto de Diretrizes do Suporte no meu servidor do Discord (ainda não lançado)",
+      "dateText": "Não informado",
+       "date": "Não informado",
+       "dateType": "ano,mes,dia",
+      "imageUrl": "/cdn/img/portfolio/2d_design/webp/discord/server/chickenofmexico/chat_banner/chicken_diretrizes_do_suporte.webp",
+      "category": "Discord Server",
+      "tags": ["ChickenOfMexico Server's", "Discord Banner"],
+      "isFeaturedPurple": true
+    },
+    {
+      "title": "ChickenOfMexico Server's \"VIPS\"",
+      "description": "Banner para canal de texto de VIPs no meu servidor do Discord (ainda não lançado)",
+      "dateText": "Não informado",
+      "imageUrl": "/cdn/img/portfolio/2d_design/webp/discord/server/chickenofmexico/chat_banner/chicken_vips.webp",
+      "category": "Discord Server",
+      "tags": ["ChickenOfMexico Server's", "Discord Banner"],
+      "isFeaturedPurple": true
+    }
+  ],
+  "design en-us": [
+    {
+      "title": "Foxy Premium Tier 1",
+      "description": "Related to Bot Foxybot Premium",
+      "dateText": "Created",
+       "date": "2023-10-08",
+       "dateType": "ano,mes,dia",
+      "imageUrl": "/cdn/img/portfolio/2d_design/webp/discord/bot/foxybot/premium/foxy_premium_tier_1.webp",
+      "category": "Discord Bot",
+      "tags": ["FoxyBot", "Discord Banner"],
+      "isFeaturedPurple": true
+    },
+    {
+      "title": "Foxy Premium Tier 2",
+      "description": "Related to Bot Foxybot Premium",
+      "dateText": "Created",
+       "date": "2023-10-08",
+       "dateType": "ano,mes,dia",
+      "imageUrl": "/cdn/img/portfolio/2d_design/webp/discord/bot/foxybot/premium/foxy_premium_tier_2.webp",
+      "category": "Discord Bot",
+      "tags": ["FoxyBot", "Discord Banner"],
+      "isFeaturedPurple": true
+    },
+    {
+      "title": "Foxy Premium Tier 3",
+      "description": "Related to Bot Foxybot Premium",
+      "dateText": "Created",
+       "date": "2023-10-08",
+       "dateType": "ano,mes,dia",
+      "imageUrl": "/cdn/img/portfolio/2d_design/webp/discord/bot/foxybot/premium/foxy_premium_tier_3.webp",
+      "category": "Discord Bot",
+      "tags": ["FoxyBot", "Discord Banner"],
+      "isFeaturedPurple": true
+    },
+    {
+      "title": "Foxy Donate",
+      "description": "Related to the Donate of Bot Foxybot",
+      "dateText": "Created",
+       "date": "2023-10-07",
+       "dateType": "ano,mes,dia",
+      "imageUrl": "/cdn/img/portfolio/2d_design/webp/discord/bot/foxybot/premium/foxy_donate.webp",
+      "category": "Discord Bot",
+      "tags": ["FoxyBot", "Discord Banner"],
+      "isFeaturedPurple": true
+    },
+    {
+      "title": "Foxy \"Regras\"",
+      "description": "Banner for Rule Text Channel on Foxy Discord Server",
+      "dateText": "Not informed",
+       "date": "Not informed",
+       "dateType": "ano,mes,dia",
+      "imageUrl": "/cdn/img/portfolio/2d_design/webp/discord/server/foxybot/chat_banner/foxy_regras_banner.webp",
+      "category": "Discord Server",
+      "tags": ["FoxyBot", "Discord Banner"],
+      "isFeaturedPurple": true
+    },
+    {
+      "title": "Foxy \"Donates\"",
+      "description": "Banner for Donate's Text Channel on Foxy Discord server",
+      "dateText": "Not informed",
+       "date": "Not informed",
+       "dateType": "ano,mes,dia",
+      "imageUrl": "/cdn/img/portfolio/2d_design/webp/discord/server/foxybot/chat_banner/foxy_donates_banner.webp",
+      "category": "Discord Server",
+      "tags": ["FoxyBot", "Discord Banner"],
+      "isFeaturedPurple": true
+    },
+    {
+      "title": "Foxy \"Feedback\"",
+      "description": "Banner for Feedback Text Channel on Foxy Discord server",
+      "dateText": "Not informed",
+       "date": "Not informed",
+       "dateType": "ano,mes,dia",
+      "imageUrl": "/cdn/img/portfolio/2d_design/webp/discord/server/foxybot/chat_banner/foxy_feedback_banner.webp",
+      "category": "Discord Server",
+      "tags": ["FoxyBot", "Discord Banner"],
+      "isFeaturedPurple": true
+    },
+    {
+      "title": "ChickenOfMexico Server's \"Diretrizes\"",
+      "description": "Banner for guideline text channel on my Discord Server",
+      "dateText": "Not informed",
+       "date": "Not informed",
+       "dateType": "ano,mes,dia",
+      "imageUrl": "/cdn/img/portfolio/2d_design/webp/discord/server/chickenofmexico/chat_banner/chicken_diretrizes.webp",
+      "category": "Discord Server",
+      "tags": ["ChickenOfMexico Server's", "Discord Banner"],
+      "isFeaturedPurple": true
+    },
+    {
+      "title": "ChickenOfMexico Server's \"Diretrizes do Suporte\"",
+      "description": "Support guideline text channel banner on my Discord Server ",
+      "dateText": "Not informed",
+       "date": "Not informed",
+       "dateType": "ano,mes,dia",
+      "imageUrl": "/cdn/img/portfolio/2d_design/webp/discord/server/chickenofmexico/chat_banner/chicken_diretrizes_do_suporte.webp",
+      "category": "Discord Server",
+      "tags": ["ChickenOfMexico Server's", "Discord Banner"],
+      "isFeaturedPurple": true
+    },
+    {
+      "title": "ChickenOfMexico Server's \"VIPS\"",
+      "description": "VIPs text channel banner on my Discord Server",
+      "dateText": "Not informed",
+      "imageUrl": "/cdn/img/portfolio/2d_design/webp/discord/server/chickenofmexico/chat_banner/chicken_vips.webp",
+      "category": "Discord Server",
+      "tags": ["ChickenOfMexico Server's", "Discord Banner"],
+      "isFeaturedPurple": true
+    }
+  ]
+}

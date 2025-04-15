@@ -1,0 +1,89 @@
+{
+    "pt-br": {
+      "home": "Página Principal / GalinhasDoMexico (PT-BR)",
+      "gallery": "Galeria / GalinhasDoMexico (PT-BR)",
+      "changelog/website": "Changelog Website / Transparency / GalinhasDoMexico (PT-BR)",
+      "changelog/blog": "Changelog Blog / Transparency / GalinhasDoMexico (PT-BR)",
+      "info": "Informações do Website / Transparency / GalinhasDoMexico (PT-BR)",
+
+      "homeNav": "Inicio",
+      "homeNav-title": "Ir para a página principal",
+      "galleryButton": "Galeria",
+      "galleryButton-title": "Veja minha galeria.",
+      "infoButton-title": "Veja as informações do website",
+      
+      "languagePTBR-title": "Continuar no idioma Português Brasil",
+      "languageENUS-title": "Use the English (US) language",
+
+
+
+      "svgBsky-title": "Meu perfil no Bluesky",
+      "svgLastfm-title": "Meu perfil no Last.fm",
+      "svgYouTube-title": "Meu canal no YouTube",
+      "svgGitHub-title": "Meu perfil no GitHub",
+      "svgXTwitter-title": "Meu perfil no X/Twitter",
+
+
+
+      "indexTextHello": "Olá, eu sou o",
+      "indexTextAboutMe": "Tenho", 
+       "indexTextAboutMe-c2": ", atualmente estou aprendendo inglês e programação (mais para websites, neste momento) e estou tentando melhorar minhas renders de Minecraft.",
+      
+      
+      "myText": "Minha",
+      "galleryText": "Galeria",
+      "gallerySeeMineAnd2D": "Veja minhas renders de Minecraft e/ou meus Design 2D.",
+      "minecraftRenders": "Renders de Minecraft",
+      "2dDesign": "Design 2D",
+      "galleryClickImg": "Clique nas imagens para expandi-las",
+
+      "search": "Pesquisa",
+
+      "websiteLicense": "Este website está licenciado sob a Licença MIT.",
+      "websiteLicense2": "As imagens presentes neste site são de minha autoria e todos os direitos são reservados."
+    },
+    "en-us": {
+      "home": "Home / GalinhasDoMexico (EN-US)",
+      "gallery": "Gallery / GalinhasDoMexico (EN-US)",
+      "changelog/website": "Changelog Website / Transparency / GalinhasDoMexico (EN-US)",
+      "changelog/blog": "Changelog Blog / Transparency / GalinhasDoMexico (EN-US)",
+      "info": "Website Information / Transparency / GalinhasDoMexico (EN-US)",
+
+      "homeNav": "Home",
+      "homeNav-title": "Go to main page",
+      "galleryButton": "Gallery",
+      "galleryButton-title": "See my gallery",
+      "infoButton-title": "See website information",
+
+      "languagePTBR-title": "Usar o idioma Português Brasil",
+      "languageENUS-title": "Continue in Language English (US)",
+
+
+
+      "svgBsky-title": "My profile on Bluesky",
+      "svgLastfm-title": "My profile on Last.fm",
+      "svgYouTube-title": "My channel on YouTube",
+      "svgGitHub-title": "My profile on GitHub",
+      "svgXTwitter-title": "My profile on X/Twitter",
+
+
+
+      "indexTextHello": "Hello, I'm",
+      "indexTextAboutMe": "I'm", 
+       "indexTextAboutMe-c2": ", I'm currently learning English and programming (more for websites, at the moment) and I'm trying to improve my Minecraft renders.",
+
+
+       "myText": "My",
+       "galleryText": "Gallery",
+       "gallerySeeMineAnd2D": "See my Minecraft renders and 2D Design.",
+       "minecraftRenders": "Minecraft Renders",
+       "2dDesign": "2D Design",
+       "galleryClickImg": "Click on the images to expand them",
+
+       "search": "Search",
+
+       "websiteLicense": "This website is licensed under the MIT License.",
+       "websiteLicense2": "The images on this site are my own and all rights are reserved."
+    }
+  }
+  

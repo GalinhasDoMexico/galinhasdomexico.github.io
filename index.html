@@ -1,47 +1,496 @@
-<html lang="pt-br">
-<title>Página Inicial / COFM Brasil</title>
-<link rel="icon" href="./img/favicon/avatar.png" type="image/x-icon">
+<!--- O que está vendo aqui? Em? Curioso(a), saia... AGORA -->
+<html>
+  <head>
+    <title data-translate="home">GalinhasDoMexico's Website</title>
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="title" content="Olá, boas vindas ao meu Portfolio feito no GitHub Pages :D / COFM Brasil">
-  <meta name="description" content="Este site ainda está em fase beta, já que eu (GalinhasDoMexico) ainda sou bem novo na parte de programação, um beijo!"
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="./img/metabgindex.png">
-  <meta name="author" content="ChickenOfMexico'>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="user-scalable=no, width=device-width, initial-scale=1.0"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="title" content="GalinhasDoMexico's Website" />
+    <meta
+      name="description"
+      content="Welcome to my website."
+    />
+    <meta name="theme-color" content="#19141d" />
+    <meta name="twitter:site" content="@chickenofmexico" />
+    <meta name="twitter:creator" content="@ChickenOfMexico" />
 
-<!-- Fonte e CSS -->
+    <!-- Fonte e CSS -->
 
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css?family=Roboto|Pacifico">
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="css/index-style.css">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto"
+    />
+    <link rel="stylesheet" href="/cdn/css/global.css" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 
-<nav>
- <br>
-  <i><a style="font-family: Pacifico" class="nav-active" href="./">Portfolio</a></i>
-  <i><a style="font-family: Pacifico" class="nav-settings" href="./projects">Projetos</a></i>
-  <i><a style="font-family: Pacifico" class="nav-settings" href="./about-me">Sobre Mim</a></i>
- <br>
-</nav>
+    <!-- Scripts -->
+    <script src="/cdn/js/pages.js" async></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="/cdn/js/language.js"></script>
+    <script src="/cdn/js/menuMobile.js"></script>
+    <script src="/cdn/js/timer.js"></script>
+    <script src="/cdn/js/gallery/search.js"></script>
+    <script src="/cdn/js/renderMD.js"></script>
+  </head>
+  <body>
+    <object
+      type="image/svg+xml"
+      data="/cdn/img/svg/sprites.svg"
+      style="display: none"
+    ></object>
+    <div id="loading" style="display: none;">
+      <div class="spinner"></div>
+      <p>Carregando...</p>
+    </div>    
+    <nav>
+      <div id="mainNav">
+        <a class="main-title" href="#home" onclick="navigateTo('home')"
+          >GalinhasDoMexico</a
+        >
+        <div class="mainNav partition"></div>
+        <a
+          data-translate="homeNav"
+          title="Ir para a página principal"
+          class="mainNav desktop"
+          style="margin-left: 3%"
+          href="#home"
+          onclick="navigateTo('home')"
+          >Inicio</a
+        >
+        <a
+          data-translate="galleryButton"
+          title="Veja o minha galeria"
+          class="mainNav desktop"
+          href="#gallery"
+          onclick="navigateTo('gallery')"
+          >Galeria</a
+        >
+        <div class="mainNav mobile">
+          <button class="menuToggle" onclick="toggleMenu()">Menu</button>
 
-<body>
-
-<img class="center" src="./img/avatarindex.png" alt="Avatar (Skin do Minecraft)" width="160" height="160">
-<h1 class="title">GalinhasDoMexico</h1>
-
-<p class="text">Olá, boas vindas ao meu <b>Portfolio</b> feito no GitHub Pages :D</p>
-<p class="text" style="margin: 1">Este site ainda está em fase beta, já que eu (GalinhasDoMexico) <br> ainda sou bem novo na parte de programação, um beijo!</p>
-
-<h3 class="footer">
- <br>
- <br>
-  <i><a style="font-family: Pacifico" class="nav-active" href="./">Portfolio</a></i>
-  <i><a style="font-family: Pacifico" class="nav-settings" href="./projects">Projetos</a></i>
-  <i><a style="font-family: Pacifico" class="nav-settings" href="./about-me">Sobre Mim</a></i>
- <br>
- <br>
- <br>
-<h3>
-
-</body>
+          <div id="mobileMenu" class="mobileMenu">
+            <div class="menuBackground" onclick="toggleMenu()"></div>
+            <nav class="menuNav">
+              <a
+                data-translate="homeNav"
+                title="Ir para a página principal"
+                class="menuLink"
+                style="margin-left: 3%"
+                href="#"
+                onclick="navigateTo('home')"
+                >Inicio</a
+              >
+              <a
+                data-translate="galleryButton"
+                title="Veja o minha galeria"
+                class="menuLink"
+                href="#gallery"
+                onclick="navigateTo('gallery')"
+                >Galeria</a
+              >
+              <a
+              data-translate="infoButton"
+              title="Veja as informações do website"
+              class="menuLink infoButton"
+              href="#info"
+              onclick="navigateTo('info')"
+              >v0.1.0-remake</a
+              >
+            </nav>
+          </div>
+        </div>
+        <div class="mainNav desktop infoOnNav">
+          <div class="infoOnNav">
+             <a
+             data-translate="infoButton"
+             title="Veja as informações do website"
+             href="#info"
+             onclick="navigateTo('info')"
+             >v0.1.0-remake</a
+            >
+          </div>
+        </div>
+        <div class="mainLanguage">
+        <div
+        style="
+          width: 0.125rem;
+          height: 1.25rem;
+          background-color: rgb(255, 255, 255);
+        "
+        ></div>
+          <a
+            data-translate="languagePTBR"
+            title="Usar idioma Português Brasil"
+            href="#"
+            class="language-link"
+            id="lang-pt-br"
+            onclick="setLanguage('pt-br')"
+            >PT-BR</a
+          >
+          <div
+            style="
+              width: 0.125rem;
+              height: 0.2rem;
+              background-color: rgb(255, 255, 255);
+            "
+          ></div>
+          <a
+            data-translate="languageENUS"
+            title="Use English (US) language"
+            href="#"
+            class="language-link"
+            id="lang-en-us"
+            onclick="setLanguage('en-us')"
+            >EN-US</a
+          >
+        </div>
+      </div>
+      <hr style="z-index: 1; top: 2.5rem; position: fixed" width="47%" />
+    </nav>
+    <div id="indexContent">
+      <div id="home" class="section active">
+        <div class="indexImgContainer slide">
+          <img src="/cdn/img/webp/avatar_camila.webp" alt="Camila" />
+        </div>
+        <div class="overflow-auto pointer-events-all">
+          <div class="container">
+            <h1 class="fade" data-translate="indexTextHello">Olá, eu sou o</h1>
+            <h1 class="fade" style="color: rgb(162, 0, 255)">
+              GalinhasDoMexico
+            </h1>
+            <h1 class="fade desktop">.</h1>
+          </div>
+          <div class="container">
+            <div class="home indexText fade">
+              <p data-translate="indexTextAboutMe">Tenho</p>
+              <span
+                class="contagem color"
+                data-alvo="2004-01-26"
+                data-tipo="anosIdade"
+                data-mod="faz"
+              ></span>
+              <p data-translate="indexTextAboutMe-c2">
+                , atualmente estou aprendendo inglês e programação (mais para
+                websites, neste momento) e estou tentando melhorar minhas
+                renders de Minecraft.
+              </p>
+              <br /><br /><br />
+            </div>
+          </div>
+        </div>
+        <br />
+        <br />
+        <br />
+        <div
+          data-translate="svgBsky"
+          title="Meu perfil no Bluesky"
+          class="svgContainer"
+        >
+          <a
+            href="https://chickenofmexico.bsky.social/"
+            target="_blank"
+            class="svgLink"
+          >
+            <svg class="svgIcon fade">
+              <use href="/cdn/img/svg/sprites.svg#bskySvg"></use>
+            </svg>
+          </a>
+        </div>
+        <div
+          data-translate="svgYouTube"
+          title="Meu canal no YouTube"
+          class="svgContainer"
+        >
+          <a
+            href="https://youtube.com/@chickenofmexico"
+            target="_blank"
+            class="svgLink"
+          >
+            <svg class="svgIcon fade">
+              <use href="/cdn/img/svg/sprites.svg#youtubeSvg"></use>
+            </svg>
+          </a>
+        </div>
+        <div
+          data-translate="svgLastfm"
+          title="Meu perfil no Last.fm"
+          class="svgContainer"
+        >
+          <a
+            href="https://last.fm/user/ChickenOfMexico"
+            target="_blank"
+            class="svgLink"
+          >
+            <svg class="svgIcon fade">
+              <use href="/cdn/img/svg/sprites.svg#lastfmSvg"></use>
+            </svg>
+          </a>
+        </div>
+        <div
+          data-translate="svgGitHub"
+          title="Meu perfil no GitHub"
+          class="svgContainer"
+        >
+          <a
+            href="https://last.fm/user/ChickenOfMexico"
+            target="_blank"
+            class="svgLink"
+          >
+            <svg class="svgIcon fade">
+              <use href="/cdn/img/svg/sprites.svg#githubSvg"></use>
+            </svg>
+          </a>
+        </div>
+        <div
+          data-translate="svgXTwitter"
+          title="Meu perfil no X/Twitter"
+          class="svgContainer"
+        >
+          <a
+            href="https://last.fm/user/ChickenOfMexico"
+            target="_blank"
+            class="svgLink"
+          >
+            <svg class="svgIcon fade">
+              <use href="/cdn/img/svg/sprites.svg#xtwitterSvg"></use>
+            </svg>
+          </a>
+        </div>
+        <hr width="30%" style="z-index: 1; opacity: 0.2" />
+        <div class="fade">
+          <h1 class="toptrack indextitle">
+            <b style="color: rgb(162, 0, 255)">Last.fm</b> Top Track
+          </h1>
+          <div class="lastfm toptrack">
+            <img
+              width="100px"
+              height="100px"
+              alt="Image from the album 'Ruined My Life'"
+              src="https://lastfm.freetls.fastly.net/i/u/770x0/39cd3f06f254c69dc1f3b99228a7065b.jpg#39cd3f06f254c69dc1f3b99228a7065b"
+            />
+            <div>
+              <h1>
+                <a
+                  title="Coopex, EBEN & Shiah Maisel - Ruined My Life / YouTube Video"
+                  href="https://www.youtube.com/watch?v=pB8ZNnNHWyU"
+                  >Ruined My Life</a
+                >
+              </h1>
+              <p>
+                <a
+                  title="Coopex YouTube"
+                  href="https://www.youtube.com/channel/UCrHMXu0CcYhJ1gO9sEM6lhg"
+                  >Coopex</a
+                >,
+                <a
+                  title="EBEN YouTube"
+                  href="https://www.youtube.com/user/EbenOfficial"
+                  >EBEN</a
+                >
+                &
+                <a
+                  title="Shiah Maisel YouTube"
+                  href="https://www.youtube.com/@Shiahsings"
+                  >Shiah Maisel</a
+                >
+              </p>
+              <p style="opacity: 0.5; top: 10; position: relative">
+                NCS Release
+              </p>
+            </div>
+            <a
+              href="https://www.last.fm/user/ChickenOfMexico/library/music/Coopex,+EBEN,+Shiah+Maisel/_/Ruined+My+Life"
+              class="toptrack scrobbles"
+              >+530 <br />
+              Scrobbles</a
+            >
+          </div>
+        </div>
+        <div
+        class="fade"
+        style="font-size: 0.75rem; color: var(--purple);"
+        >
+        <p data-translate="websiteLicense" style="opacity: 0.8; color: white;">
+          Este website está licenciado sob a Licença MIT.
+        </p>
+        <p data-translate="websiteLicense2" style="position: relative; bottom: 0.75rem; opacity: 0.8; color: white;"> 
+          As imagens presentes neste site são de minha autoria e todos os direitos são reservados.
+        </p>
+        </div>
+      </div>
+    </div>
+    <div id="galleryContent">
+      <div id="gallery" class="section">
+      <div class="mobile">
+        <div class="container fade">
+          <h1 data-translate="myText">Meu</h1>
+          <h1 data-translate="galleryText" style="color: rgb(162, 0, 255)">Gallery</h1>
+          <h1>.</h1>
+        </div>
+        <div class="galleryText fade">
+          <p data-translate="gallerySeeMineAnd2D">
+            Veja minhas renders de Minecraft e/ou meus Design 2D.
+          </p>
+        </div>
+        <div
+        class="fade"
+        style="font-size: 0.75rem; color: var(--purple);"
+        >
+        <p data-translate="websiteLicense" style="opacity: 0.8; color: white;">
+          Este website está licenciado sob a Licença MIT.
+        </p>
+        <p data-translate="websiteLicense2" style="position: relative; bottom: 0.75rem; opacity: 0.8; color: white;"> 
+          As imagens presentes neste site são de minha autoria e todos os direitos são reservados.
+        </p>
+        </div>
+        <br>
+        <details class="galleryMenu mobile">
+        <summary data-translate="search">Pesquisa</summary>
+        <br>
+        <div>
+          <div class="gallerySearchTabs slideRight">
+            <button
+              data-translate="minecraftRenders"
+              class="gallerySearchTabsLink active"
+              data-category="minecraft"
+            >
+              Renders de Minecraft
+            </button>
+            <button
+              data-translate="2dDesign"
+              class="gallerySearchTabsLink"
+              data-category="design"
+            >
+              Design 2D
+            </button>
+          </div>
+          <br />
+          <div class="container gallerySearchGlobal slideRight">
+            <!-- Sistema de Pesquisa -->
+            <div class="container gallerySearch">
+              <!-- O formulário de pesquisa será inserido aqui via JavaScript -->
+            </div>
+            <div class="container gallerySearchTagsSelected">
+              <!-- As tags selecionadas serão exibidas aqui-->
+            </div>
+          </div>
+         </div>
+       </details>
+      </div>
+       <div class="desktop">
+        <div class="container fade">
+          <h1 data-translate="myText">Minha</h1>
+          <h1 data-translate="galleryText" style="color: rgb(162, 0, 255)">Galeria</h1>
+          <h1>.</h1>
+        </div>
+        <div class="galleryText fade">
+          <p data-translate="gallerySeeMineAnd2D">
+            Veja minhas renders de Minecraft e/ou meus Design 2D.
+          </p>
+        </div>
+        <br />
+        <br />
+        <div class="gallerySearchTabs slideRight">
+          <button
+            data-translate="minecraftRenders"
+            class="gallerySearchTabsLink active"
+            data-category="minecraft"
+          >
+            Renders de Minecraft
+          </button>
+          <button
+            data-translate="2dDesign"
+            class="gallerySearchTabsLink"
+            data-category="design"
+          >
+            Design 2D
+          </button>
+        </div>
+        <br />
+        <div class="container gallerySearchGlobal slideRight">
+          <!-- Sistema de Pesquisa -->
+          <div class="container gallerySearch">
+            <!-- O formulário de pesquisa será inserido aqui via JavaScript -->
+          </div>
+          <div class="container gallerySearchTagsSelected">
+            <!-- As tags selecionadas serão exibidas aqui-->
+          </div>
+        </div>
+       </div>
+        <!-- Resultados da Pesquisa -->
+        <div
+          id="gallerySection"
+          class="container gallerySearchResults slideTop"
+        >
+          <!-- Os resultados serão renderizados aqui -->
+        </div>
+        <div
+          class="fade desktop"
+          style="font-size: 0.75rem; color: var(--purple); padding-top: 10%"
+        >
+          <hr width="20%" style="opacity: 0.5" />
+          <p data-translate="galleryClickImg">
+            Clique nas imagens para expandi-las
+          </p>
+          <p data-translate="websiteLicense" style="opacity: 0.8; color: white;">
+            Este website está licenciado sob a Licença MIT.
+          </p>
+          <p data-translate="websiteLicense2" style="position: relative; bottom: 0.75rem; opacity: 0.8; color: white;"> 
+            As imagens presentes neste site são de minha autoria e todos os direitos são reservados.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div id="changeLogContent">
+      <div id="changelog-website" class="section" data-id="changelog/website">
+        <div
+        class="mdPurple"
+        data-md-path="/cdn/md/changelog/changelog_website"
+        data-md-multilang="true">
+        </div>
+      </div>
+      <div id="changelog-blog" class="section" data-id="changelog/blog">
+        <div
+        class="mdPurple"
+        data-md-path="/cdn/md/changelog/changelog_blog"
+        data-md-multilang="true">
+        </div>
+        <br>
+        <br>
+      </div>
+    </div>
+    <div id="infoContent">
+      <div id="info" class="section">
+        <div
+        class="mdPurple"
+        data-md-path="/cdn/md/info/info"
+        data-md-multilang="true">
+        </div>
+        <br>
+        <br>
+      </div>
+    </div>
+    <script>
+      // Register the service worker
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('./service-worker.js').then(function(registration) {
+          // Registration was successful
+          console.log('ServiceWorker registration successful with scope: ', registration.scope);
+      }).catch(function(err) {
+          // registration failed :(
+            console.log('ServiceWorker registration failed: ', err);
+          });
+      }
+    </script>
+  </body>
 </html>
