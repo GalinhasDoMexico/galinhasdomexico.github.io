@@ -1,7 +1,7 @@
 # Website Changelog 
 > **Note**: The changelog does not include mini-updates.
  --- 
- # [0.1.0-remake] - 2025-02-19 
+ # [0.1.0-remake] - 2025-04-15
  
  ### Redone 
 - Completely redone website. 
