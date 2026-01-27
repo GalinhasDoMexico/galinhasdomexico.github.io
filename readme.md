@@ -10,14 +10,14 @@ Este projeto de website nasceu do meu desejo de aprender programação. Inicialm
 ---
 
 ### Direitos
-Este website está sob a **[Licença MIT](LICENSE "Veja a Licença MIT")**.
+Este website está sob a **[Licença GNU GPL v3.0](LICENSE "Veja a Licença GNU GPL v3.0")**.
 
 **Todos os direitos reservados** sobre as **imagens**. **Não** utilize, modifique ou reproduza qualquer imagem deste website sem autorização.
 
 ---
 
 ### Instalação
-> Lembre-se, este website está sob a **[Licença MIT](LICENSE "Veja a Licença MIT")**.
+> Lembre-se, este website está sob a **[Licença GNU GPL v3.0](LICENSE "Veja a Licença GNU GPL v3.0")**.
 
 1. Clone o respositório:
    ```bash
