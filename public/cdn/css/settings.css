@@ -1,0 +1,450 @@
+:host {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 2000;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    right: -390px;
+    width: 320px;
+    height: 100vh;
+    background: var(--black2);
+    color: var(--white);
+    padding: 20px;
+    box-shadow: -4px 0 10px rgba(0, 0, 0, 0.4);
+    transition: right 0.3s ease;
+    overflow-y: auto;
+}
+
+.menu.open {
+    right: 0;
+}
+
+.close-btn {
+    position: relative;
+    z-index: 3;
+    background: none;
+    border: none;
+    color: var(--white);
+    font-size: 28px;
+    cursor: pointer;
+    float: right;
+}
+
+.settings-icon {
+    position: relative;
+    background: none;
+    border: none;
+    color: var(--white);
+    cursor: pointer;
+    top: 1px;
+}
+
+.settings-menu {
+    position: fixed;
+    top: 0;
+    right: -320px;
+    width: 320px;
+    height: 100vh;
+    background: #111;
+    color: var(--white);
+    padding: 20px;
+    box-shadow: -4px 0 10px rgba(0, 0, 0, 0.4);
+    transition: right 0.3s ease;
+    z-index: 1000;
+    overflow-y: auto;
+}
+
+.settings-menu.open {
+    right: 0;
+}
+
+.settings-close {
+    background: none;
+    border: none;
+    color: var(--white);
+    font-size: 28px;
+    cursor: pointer;
+    float: right;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+#settingsContainer {
+    overflow: visible;
+}
+
+#settings {
+    overflow: auto;
+    pointer-events: all;
+}
+
+/* Nav */
+div.headTitle h1 {
+    font-size: 2.1rem;
+    font-family: Montserrat;
+}
+
+.menu .headTitle p {
+    font-family: Montserrat;
+    color: var(--purple-dark2);
+    position: relative;
+    left: 70%;
+    bottom: 25px;
+    width: 54.5px;
+    display: flex;
+    justify-content: center;
+}
+
+.menu .headTitle .main {
+    height: 70px;
+}
+
+
+.settingsDivContainer .mdPurple blockquote p {
+    font-weight: bold;
+}
+
+.menu ul {
+    width: 100%;
+    display: flex;
+    list-style: none;
+    padding: 0;
+    justify-content: center;
+    margin-block-start: 0;
+}
+
+.menu ul li {
+    padding: 15px;
+    text-align: center;
+}
+
+.menu ul li button {
+    text-decoration: none;
+    color: var(--var(--white));
+    display: block;
+    border-left: 4px solid var(--purple-dark2);
+    background-color: var(--black);
+    padding: 10px;
+    width: 100%;
+}
+
+.menu ul li button.deactivated {
+    cursor: not-allowed;
+    border-left: 4px solid var(--purple-dark);
+    opacity: 0.5;
+}
+
+.menu ul li button.deactivated:hover {
+    background-color: var(--black)
+}
+
+.menu ul li button:hover {
+    background-color: var(--purple-dark3);
+}
+
+
+.settingsDivContainer {
+    padding-bottom: 1%;
+    padding-top: 1%;
+    border-radius: 20px;
+    position: relative;
+}
+
+.settingsDivContainer.blogSettings {
+    pointer-events: none;
+    opacity: 0.6;
+}
+
+.settingsDivContainer.blogSettings label {
+    pointer-events: none;
+}
+
+
+.checkbox-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.checkbox-container input {
+    display: none;
+}
+
+.checkbox-slider {
+    position: relative;
+    width: 50px;
+    height: 25px;
+    background-color: var(--purple-light);
+    transition: 0.4s;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-right: 5%;
+}
+
+.checkbox-slider:before {
+    content: "";
+    position: absolute;
+    width: 21px;
+    height: 21px;
+    left: 2px;
+    bottom: 2px;
+    background-color: var(--var(--white));
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+input:checked+.checkbox-slider {
+    background-color: var(--purple-dark2);
+}
+
+input:checked+.checkbox-slider:before {
+    transform: translateX(25px);
+}
+
+.checkbox-slider .unchecked,
+.checkbox-slider .checked {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    text-align: center;
+    font-size: 12px;
+    color: black;
+}
+
+
+.checkbox-slider .unchecked {
+    left: 2px;
+    color: var(--purple-light);
+    animation: fade 0.4s ease-in-out forwards;
+}
+
+.checkbox-slider .checked {
+    right: 2px;
+    color: var(--purple-dark2);
+    display: none;
+    animation: fade 0.4s ease-in-out forwards;
+}
+
+
+input:checked+.checkbox-slider .unchecked {
+    display: none;
+}
+
+input:checked+.checkbox-slider .checked {
+    display: block;
+}
+
+label {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 10px;
+    pointer-events: all;
+}
+
+.settingsDivContainer.themeSettings {
+    background-image: url('/src/cdn/img/webp/theme_switcher_background.webp');
+    background-size: cover;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.settingsDivContainer.themeSettings button {
+    position: relative;
+    top: 70%;
+}
+
+.settingsDivContainer.themeSettings #themeSwitcher-dark {
+    color: #ffffff;
+    background-color: #19141d;
+    left: 5%;
+}
+
+.settingsDivContainer.themeSettings #themeSwitcher-light {
+    color: #000000;
+    background-color: #cdc7da;
+    left: 31%
+}
+
+.settingsDivContainer.exportSettings {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    font-family: Roboto;
+    font-size: 14px;
+    color: var(--white);
+    cursor: pointer;
+}
+
+.settingsDivContainer.exportSettings #reload-container {
+    position: relative;
+    left: 10px;
+}
+
+#exportSettings {
+    padding: 10px 20px;
+    background-color: var(--purple);
+    border: transparent;
+    border-radius: 10px;
+}
+
+#exportSettings:hover,
+#exportSettings:active {
+    background: var(--purple-dark);
+    color: var(--var(--white))
+}
+
+#exportSettings+label {
+    display: inline-block;
+    flex: 0 0 auto;
+    width: auto;
+    padding: 10px 25px;
+    background-color: var(--purple-dark2);
+    border: transparent;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+#exportSettings+label:hover,
+#exportSettings+label:active {
+    background: var(--purple-dark);
+    color: var(--var(--white));
+}
+
+#importSettings {
+    display: none;
+}
+
+.exportSettingsENUS #exportSettings {
+    font-family: Roboto;
+    font-size: 14px;
+    background-color: var(--purple-dark);
+    border: transparent;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin-left: 32%;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.exportSettingsENUS #exportSettings+label {
+    font-family: Roboto;
+    font-size: 14px;
+    background-color: var(--purple-dark);
+    border: transparent;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin-right: 33%;
+    color: var(--var(--white));
+    cursor: pointer;
+    margin-left: 0px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+@media screen and (max-width: 768px) {
+
+    .title {
+        margin-right: 67%;
+        margin-top: 5%;
+        margin-bottom: -3%;
+        position: relative;
+        z-index: 1;
+        animation: fade 1s ease-in-out forwards;
+    }
+
+    .settings-icon {
+        position: relative;
+        top: 100px;
+    }
+
+    .menu {
+        width: auto;
+        right: -10000px;
+
+        transition: right 1s ease;
+    }
+
+    .settingsDivContainer {
+        z-index: 999999;
+        background-color: var(--black2);
+        margin-left: 0%;
+        margin-right: 0%;
+        padding-bottom: 1%;
+        padding-top: 3%;
+        border-radius: 20px;
+        border: transparent;
+        position: relative;
+    }
+
+    .settingsDivContainer:before {
+        content: '';
+        position: absolute;
+        top: -3;
+        left: 30;
+        width: 100px;
+        height: 5px;
+        border-top-left-radius: 18px;
+    }
+
+    b.bSettings {
+        display: none;
+    }
+
+    .text.summarySettings {
+        margin-right: 56%;
+    }
+
+    .settingsDivContainer.exportSettings {
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+    .settingsDivContainer.exportSettings:before {
+        content: '';
+        position: absolute;
+        top: -3px;
+        left: 30px;
+        width: 39%;
+        height: 5px;
+    }
+
+    .exportSettingsENUS #exportSettings {
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+    .exportSettingsENUS #exportSettings+label {
+        margin-right: 0%;
+    }
+
+    #exportSettings {
+        margin-left: 5%;
+    }
+}

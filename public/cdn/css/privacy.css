@@ -1,0 +1,64 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+#content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.privacyContent {
+    max-width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+
+
+h1 {
+    margin: 50px 0 0 0;
+    font-size: 40px;
+    font-family: Montserrat;
+}
+
+h2 {
+    margin: 10px 0 0 0;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+
+.privacyInfo.summary.title {
+    margin-top: 20px;
+}
+
+.privacyText {
+    margin-top: 20px;
+}
+
+.privacyText.column h2 {
+    font-size: 30px;
+}
+
+@media screen and (max-width: 768px) {
+    .privacyContent {
+        max-width: 100%;
+    }
+
+    .privacyInfo.summary.title {
+        margin-right: 0%;
+    }
+}

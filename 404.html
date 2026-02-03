@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>cofm.site</title>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const getLang = () => {
+        const storedLang = localStorage.getItem("websiteLanguage");
+        if (storedLang) return storedLang;
+
+        const browserLang = navigator.language.toLowerCase();
+        if (browserLang.startsWith("pt")) return "pt-br";
+        return "en-us";
+      };
+
+      const lang = getLang();
+
+      const routes = {
+        gallery: {
+          "pt-br": "/br/gallery",
+          "en-us": "/us/gallery"
+        },
+        home: {
+          "pt-br": "/br/",
+          "en-us": "/us/"
+        },
+        privacy: {
+          "pt-br": "/br/terms/privacy",
+          "en-us": "/us/terms/privacy"
+        },
+        license: "https://github.com/galinhasdomexico/galinhasdomexico.github.io?tab=GPL-3.0-1-ov-file#readme"
+      };
+
+      const path = window.location.pathname.toLowerCase().replace(/^\/+/, "");
+
+      if (path.includes("gallery")) {
+        window.location.href = routes.gallery[lang];
+      } else if (path.includes("privacy")) {
+        window.location.href = routes.privacy[lang];
+      } else {
+        window.location.href = routes.home[lang];
+      }
+    });
+  </script>
+</head>
+<body style="background-color: black"></body>
+</html>

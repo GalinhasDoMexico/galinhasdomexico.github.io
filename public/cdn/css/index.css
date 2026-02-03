@@ -1,0 +1,137 @@
+#content {
+  color: white;
+}
+
+
+/* Seção Principal */
+#indexContent {
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 10px;
+  overflow-x: hidden;
+  z-index: -1;
+}
+
+#indexContent .container {
+  max-width: 55%;
+}
+
+div.indexHeadTitle h1 {
+  font-size: 2.1rem;
+  font-family: Montserrat;
+}
+
+.home.indexText {
+  word-wrap: break-word;
+  font-size: 1.125rem;
+}
+
+.home.indexText p {
+  margin: 0;
+  display: inline;
+}
+
+.home.indexText span {
+  margin-right: -5px;
+}
+
+.heartDani {
+  color: red;
+  font-size: 25px;
+}
+
+#mainPage {
+  position: relative;
+}
+
+.indexImgContainer img {
+  width: 100%;
+}
+
+.indexImgContainer {
+  display: flex;
+  position: absolute;
+  justify-content: left;
+  top: -30px;
+  width: 100%;
+  pointer-events: none;
+}
+
+footer {
+  position: relative;
+  z-index: 1001;
+}
+
+.svgContainer[title="Meu perfil no Bluesky"] .svgIcon,
+.svgContainer[title="Meu canal no YouTube"] .svgIcon,
+.svgContainer[title="Meu perfil no Last.fm"] .svgIcon,
+.svgContainer[title="Meu perfil no GitHub"] .svgIcon,
+.svgContainer[title="Meu perfil no X/Twitter"] .svgIcon,
+.svgContainer[title="My Bluesky profile"] .svgIcon,
+.svgContainer[title="My YouTube channel"] .svgIcon,
+.svgContainer[title="My Last.fm profile"] .svgIcon,
+.svgContainer[title="My GitHub profile"] .svgIcon,
+.svgContainer[title="My X/Twitter profile"] .svgIcon {
+  fill: white;
+}
+
+.svgContainer[title="Meu perfil no Bluesky"]:hover .svgIcon,
+.svgContainer[title="My Bluesky profile"]:hover .svgIcon {
+  fill: #1185fe;
+}
+
+.svgContainer[title="Meu canal no YouTube"]:hover .svgIcon,
+.svgContainer[title="My YouTube channel"]:hover .svgIcon {
+  fill: red;
+}
+
+.svgContainer[title="Meu perfil no Last.fm"]:hover .svgIcon,
+.svgContainer[title="My Last.fm profile"]:hover .svgIcon {
+  fill: #d51007;
+}
+
+.svgContainer[title="Meu perfil no GitHub"]:hover .svgIcon,
+.svgContainer[title="My GitHub profile"]:hover .svgIcon {
+  fill: #2b3137;
+}
+
+.svgContainer[title="Meu perfil no X/Twitter"]:hover .svgIcon,
+.svgContainer[title="My X/Twitter profile"]:hover .svgIcon {
+  fill: #326ada;
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  #content {
+    width: 100%;
+  }
+
+  #indexContent .container {
+    max-width: 100%;
+  }
+
+  body {
+    background-position: center;
+    background-image: url('/src/cdn/img/png/chicken_sit_campfire.png');
+  }
+
+  .indexImgContainer img {
+    display: none;
+  }
+
+  div.container.indexHeadTitle {
+    margin-top: 20px;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  h1[style='color: rgb(162, 0, 255)'] {
+    margin-top: 0px;
+  }
+
+  .heartDani {
+    color: red;
+    font-size: 18px;
+  }
+}
