@@ -1,0 +1,210 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('/public/cdn/font/Roboto-VF.ttf') format('truetype');
+    font-weight: 100 900;
+    font-stretch: 75% 125%;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('/public/cdn/font/Montserrat.woff2') format('woff2'),
+        url('/public/cdn/font/Montserrat.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    background: black;
+    overflow: hidden;
+
+    color: white;
+
+    font-family: 'Roboto', sans-serif;
+}
+
+/* estilo base das bolas */
+.bola {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: indigo;
+    filter: blur(60px);
+    opacity: 0.7;
+    animation: flutuar 12s ease-in-out infinite alternate;
+    z-index: -1;
+}
+
+/* cada bola em posição diferente */
+.b1 {
+    top: 10%;
+    left: 70%;
+    animation-duration: 10s;
+}
+
+.b2 {
+    top: 30%;
+    left: 50%;
+    animation-duration: 14s;
+    background: indigo;
+}
+
+.b3 {
+    top: 60%;
+    left: 80%;
+    animation-duration: 18s;
+    background: indigo;
+}
+
+.b4 {
+    top: 20%;
+    left: 20%;
+    animation-duration: 20s;
+    background: indigo;
+}
+
+/* animação suave */
+@keyframes flutuar {
+    from {
+        transform: translateY(0) translateX(0);
+    }
+
+    to {
+        transform: translateY(50px) translateX(-50px);
+    }
+}
+
+nav {
+    height: 60px;
+    background-color: rgb(12, 0, 20);
+    top: 0;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav a,
+nav p {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+
+    margin-left: 10px;
+}
+
+nav a.mainLink {
+    font-family: Montserrat;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: rgb(12, 0, 20);
+}
+
+footer a {
+    margin-left: 15px;
+}
+
+footer h2 {
+    font-size: 50px;
+    margin-right: 15px;
+    margin-bottom: 0;
+    line-height: 1;
+}
+footer p {
+    margin-top: 0;
+    margin-bottom: 35px;
+    margin-left: 25%;
+}
+
+div#content {
+    margin-top: 100px;
+}
+
+a {
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+
+    color: white;
+
+    display: flex;
+    align-items: center;
+}
+
+p {
+    white-space: normal;
+    overflow-wrap: break-word;
+}
+
+h1,
+h2,
+h3 {
+    display: flex;
+    justify-content: center;
+    font-family: Montserrat;
+}
+
+h1.mainTitle {
+    font-size: 50px;
+    margin: 0;
+    line-height: 1;
+}
+
+h1.mainTitle.dois {
+    font-size: 20px;
+    margin: 0;
+}
+
+div.textClass {
+    margin-top: 30px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+div.textClass p {
+    margin: 0;
+
+    white-space: normal;
+}
+
+div.aboutClass {
+    margin-top: 30px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+div.socialClass {
+    margin-top: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+div.socialClass a {
+    margin-left: 10px;
+
+    font-family: Montserrat;
+}
